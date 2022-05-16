@@ -23,16 +23,16 @@
       #t_3_1.titulo-segundo.color-acento-contenido(data-aos="zoom-out-right")
         h2 3.1.	Conceptos y generalidades
 
-      p.m-0.mb-4 La enumeración se define como el proceso de extracción de nombres de usuario, nombres de máquinas, recursos de red, recursos compartidos y servicios de un sistema. En esta fase, el atacante crea una conexión activa con el sistema y realiza consultas dirigidas para obtener más información sobre el objetivo. 
+      p.m-0.mb-4(data-aos="fade-right") La enumeración se define como el proceso de extracción de nombres de usuario, nombres de máquinas, recursos de red, recursos compartidos y servicios de un sistema. En esta fase, el atacante crea una conexión activa con el sistema y realiza consultas dirigidas para obtener más información sobre el objetivo. 
 
-      p.m-0.mb-4 La información reunida se utiliza para identificar las vulnerabilidades o los puntos débiles de la seguridad del sistema y trata de explotarlos en la fase de obtención del sistema. 
+      p.m-0.mb-4(data-aos="fade-right") La información reunida se utiliza para identificar las vulnerabilidades o los puntos débiles de la seguridad del sistema y trata de explotarlos en la fase de obtención del sistema. 
 
-      p.m-0.mb-4 Estos son los tipos de información enumerados por los intrusos:
+      p.m-0.mb-4(data-aos="fade-right") Estos son los tipos de información enumerados por los intrusos:
 
       .row.justify-content-center
         .col-12.col-md-8
           figure
-            img(src='@/assets/curso/tema3/img02.svg')
+            img(data-aos="fade-up-right")(src='@/assets/curso/tema3/img02.svg')
       
       Separador
 
@@ -45,14 +45,14 @@
 
     .tarjeta-color.bg_color6.p-5.mb-5  
       SlyderA.mb-5(:datos="datosSlyder")
-        .row.justifiy-content-evenly
+        .row.justifiy-content-evenly(data-aos="fade-right")
           .col-md-5
             h5.mb-4 Extraer los nombres de usurario que utilizan identificadores de correo electrónico.
             p.m-0.mb-4 Generalmente, la ID de correo electrónico contiene dos partes: nombre de usuario y nombre de dominio. La estructura de la dirección de correo electrónico es <b>"nombredeusuario@nombrededominio"</b>.
             p.m-0 Ejemplo: <b>xyz@live.com</b> 
             | <b>xyz</b>, carácter que precede al símbolo “@”, es el nombre de usuario.
             p.m-0 <b>live.com</b>, carácter que sucede al símbolo “@” es el nombre de dominio.
-          .col-md-7
+          .col-md-7(data-aos="fade-left")
             figure
               img(src='@/assets/curso/tema3/img03.png', alt='Texto que describa la imagen')
         .row.justifiy-content-evenly
@@ -110,7 +110,7 @@
 
     p.margin_left1 <em>Pentesting</em>: de enumeración:
 
-    .row.justify-content-center
+    .row.justify-content-center(data-aos="fade-right")
       .col-12.col-md-6
         ul
           li 
@@ -139,7 +139,7 @@
           li 
             i.fas.fa-check-circle
             |  <b>Utilizar herramientas como SuperScan, NetBIOS Enumerator y PsTools suite.</b>
-      .col-12.col-md-4
+      .col-12.col-md-4(data-aos="fade-right")
         figure
           img(src='@/assets/curso/tema3/img10.png')
 

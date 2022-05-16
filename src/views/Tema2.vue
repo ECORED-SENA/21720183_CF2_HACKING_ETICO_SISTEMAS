@@ -20,7 +20,7 @@
 
       p.m-0 Sabiendo lo anterior, se invita a profundizar a través del siguiente video en los principales conceptos y generalidades del escaneo de redes y dispositivos. Se sugiere llevar registro de los aspectos más relevantes en una libreta personal de apuntes:
 
-      .row.justify-content-center
+      .row.justify-content-center(data-aos="fade-up")
         .col-12.col-md-12.posit_relative2    
           figure.mb-5
             .video
@@ -45,13 +45,13 @@
 
     .tarjeta-color.bg_color6.p-5.mb-5  
       SlyderA.mb-5(:datos="datosSlyder")
-        .row.justifiy-content-evenly
+        .row.justifiy-content-evenly(data-aos="fade-right")
           .col-md-5
             h5.mb-4 Comprobación de sistemas vivos escaneo ICMP
             p.m-0.mb-4.mb-md-0 El ICMP (<em>Internet Control Message Protocol</em>) es un protocolo que los dispositivos de red (por ejemplo, los enrutadores) utilizan para generar mensajes de error cuando los problemas de la red impiden que los paquetes IP pasen.
           .col-md-7
             figure
-              img.mx-auto.d-block(src='@/assets/curso/tema2/img03.png', alt='Texto que describa la imagen')
+              img.mx-auto.d-block(data-aos="fade-left")(src='@/assets/curso/tema2/img03.png', alt='Texto que describa la imagen')
         .row.justifiy-content-evenly
           .col-md-5
             h5.mb-4 Ping ICMP
@@ -84,15 +84,15 @@
     .row.justifiy-content-center
       .col-12.col-md-4
         figure
-          img(src='@/assets/curso/tema2/img08.svg')
+          img(data-aos="fade-right")(src='@/assets/curso/tema2/img08.svg')
       .col-12.col-md-8
-        .cajon.color-primario.p-3.mb-4
+        .cajon.color-primario.p-3.mb-4(data-aos="fade-left")
           h5.ms-3.pt-2 Proceso de apretón de manos
           p.ms-3.pt-2 El proceso de apretón de manos de tres vías está diseñado de tal manera que ambos extremos ayudan a iniciar, negociar y separar las conexiones de sockets TCP al mismo tiempo. También permite transferir múltiples conexiones de sockets TCP, en ambas direcciones, al mismo tiempo. 
 
     p.m-0.mb-4 He aquí los tres pasos:
 
-    TabsA.color-acento-botones.mb-5
+    TabsA.color-acento-botones.mb-5(data-aos="fade-right")
       .tarjeta.color-acento-botones--borde.p-4.border_radius1(titulo="PASO 1")
         .row.justify-content-center.align-items-center
           .col-12.col-md-7
@@ -122,14 +122,14 @@
     
     .row.justifiy-content-center.align-items-center
       .col-12.col-md-8
-        .cajon.color-primario.p-3.mb-4
+        .cajon.color-primario.p-3.mb-4(data-aos="fade-right")
           h5.ms-1.pt-2 Banderas de comunicación TCP
           p.ms-1.pt-2 Las banderas de TCP tienen la misma función de mostrar cambios, situaciones o condiciones de la información; podrían compararse con un semáforo, ya que alertan sobre cuándo se debe parar, seguir o tener precaución. Estas banderas informan el estado de la información, de extremo a extremo, para que los datos lleguen íntegros (tal cual como son).
       .col-12.col-md-4
         figure
-          img(src='@/assets/curso/tema2/img12.svg')
+          img(data-aos="fade-left")(src='@/assets/curso/tema2/img12.svg')
 
-    ImagenInfografica.color-secundario.mb-5
+    ImagenInfografica.color-secundario.mb-5(data-aos="fade-up")
       template(v-slot:imagen)
         figure
           img(src='@/assets/curso/tema2/imginfografica_t2.svg', alt='Texto que describa la imagen')
@@ -166,7 +166,7 @@
 
     .row.justify-content-center.mb-4
       .col-12.col-md-10
-        .cajon.color-acento-contenido.p-2.mb-5.mb-md-0
+        .cajon.color-acento-contenido.p-2.mb-5.mb-md-0(data-aos="fade-left")
           .row.justify-content-around.align-items-center
             .col-md-10
               p.m-0.ms-4 Hablar de estas para identificar diferentes vulnerabilidades en un sistema, consiste tanto en permanecer en el anonimato como en falsificar la identidad de un dispositivo que era confiable por los sistemas defensivos; todo con el fin de realizar intrusiones y analizar qué fallas existen en las redes y solventarlas.
@@ -177,7 +177,7 @@
     p.m-0.mb-5 Entre las herramientas más comunes, se pueden mencionar:
 
     .row.mb-5
-      .col-md-6.mb-5.mb-md-0
+      .col-md-6.mb-5.mb-md-0(data-aos="fade-right")
         LineaTiempoD.color-secundario
           p(numero="1" titulo="Hping 2 Hping 3") Hping3 es una herramienta que se utiliza desde la consola o terminal en Linux, cuyo fin es el análisis y ensamblado de paquetes TCP/IP, similar al comando Ping. Esta herramienta, además de enviar paquetes ICMP, también puede enviar paquetes TCP, UDP y RAW-IP de una forma muy rápida.
           
@@ -191,14 +191,14 @@
 
       .col-md-6
         figure
-          img(src='@/assets/curso/tema2/img14.png')
+          img(data-aos="fade-left")(src='@/assets/curso/tema2/img14.png')
 
     .row.justify-content-center.mb-4      
       .col-lg-5
         figure
-          img.mb-5.mb-md-0(src='@/assets/curso/tema2/img15.svg')
+          img.mb-5.mb-md-0(data-aos="fade-right")(src='@/assets/curso/tema2/img15.svg')
       .col-lg-7
-        .cajon.color-acento-botones.p-4
+        .cajon.color-acento-botones.p-4(data-aos="fade-left")
           .h5.mb-4 ¡Importante!
           p.m-0 Cuando los profesionales de la ciberseguridad utilizan herramientas de escaneo en las redes y dispositivos de las organizaciones, puede haber riesgos legales que deben ser manejados por los individuos y las empresas. A menudo, los instrumentos de exploración se utilizan para medir el cumplimiento de las políticas y leyes de ciberseguridad, por lo que deben utilizarse con el debido cuidado; hay protocolos que deben seguirse para garantizar el uso adecuado de los instrumentos de escaneo
 
@@ -207,7 +207,7 @@
     #t_2_3.titulo-segundo.color-acento-contenido(data-aos="zoom-out-right")
       h2 2.3	<em>Fingerprinting</em>, aparcamiento y OS
 
-    .row.justify-content-center.align-items-center.mb-5
+    .row.justify-content-center.align-items-center.mb-5(data-aos="fade-up")
       .col-12.col-md-4
         p.m-0 OS <em>fingerprinting</em> se refiere a la detección del sistema operativo de un host final, mediante el análisis de paquetes, que se originan en ese sistema. Es utilizada por los profesionales de la seguridad y los piratas informáticos para trazar mapas de redes remotas y determinar qué vulnerabilidades podrían estar presentes para ser explotadas.
         .tarjeta-color.bg_color7.p-2
@@ -222,7 +222,7 @@
 
     .bg_fondo2_t2
       p.m-0.mb-4.text-center Algunas de las áreas que pueden ser examinadas para determinar el sistema operativo son:
-      .row.justify-content-center.align-items-center          
+      .row.justify-content-center.align-items-center(data-aos="fade-right")          
         .col-12.col-md-7
           .tarjeta-color.bg_color8.p-3
             ul
@@ -254,7 +254,7 @@
                 p.m-0 La huella del sistema operativo pasivo es el examen de una muestra de paquetes recolectada pasivamente de un host. Se basa en rastros del sistema remoto. En lugar de consultar activamente el sistema remoto, puede capturar los paquetes enviados desde el sistema remoto.
         .col-12.col-md-5
           figure
-            img(src='@/assets/curso/tema2/img17.png')
+            img(data-aos="fade-left")(src='@/assets/curso/tema2/img17.png')
 
     Separador
 
@@ -265,13 +265,13 @@
 
     .row.justify-content-center.mb-4
       .col-12.col-md-10
-        .cajon.color-acento-contenido.p-4.mb-5.mb-md-0
+        .cajon.color-acento-contenido.p-4.mb-5.mb-md-0(data-aos="fade-right")
           .row.justify-content-around.align-items-center
             .col-md-7
               p.m-0 Si se utiliza un servidor <em>proxy</em>, el tráfico de internet fluye a través del servidor <em>proxy</em> en su camino hacia la dirección que se solicitó; la solicitud vuelve, entonces, a través de ese mismo servidor <em>proxy</em> (hay excepciones a esta regla) y luego el servidor <em>proxy</em> reenvía los datos recibidos del sitio web al usuario. 
             .col-md-5
               figure
-                img(src='@/assets/curso/tema2/img18.svg')
+                img(data-aos="fade-left")(src='@/assets/curso/tema2/img18.svg')
     
     .row.justify-content-center.align-items-stretch.mb-4
       .col-12.col-md-4
@@ -288,7 +288,7 @@
 
     p.m-0 En el siguiente recurso se puede conocer, profundizar y asimilar las razones técnicas, por las cuales se hace útil y necesario el uso de un servidor <em>proxy</em>:
 
-    .row.justify-content-center.mb-5
+    .row.justify-content-center.mb-5(data-aos="fade-up-right")
         .col-12.col-md-12.posit_relative2    
           figure
             .video
@@ -298,14 +298,14 @@
       .row.justify-content-center.align-items-center
         .col-12.col-md-5
           figure
-            img(src='@/assets/curso/tema2/img20.png')
-        .col-12.col-md-7
+            img(data-aos="fade-right")(src='@/assets/curso/tema2/img20.png')
+        .col-12.col-md-7(data-aos="fade-left")
           .h5.mb-4 Anonimizadores 
           p.m-o Los sitios anonimizadores acceden a Internet a su nombre, protegiendo la información personal del usuario; Un anonimizador protege toda la información de identificación de una computadora, mientras navega en lugar de la persona, permitiendo permanecer, al menos, un paso alejada de los sitios que visita. 
 
     p.m-0.mb-4 Estas son las particularidades de los tipos de anonimizadores:
 
-    .row.mb-5
+    .row.mb-5(data-aos="fade-right")
       .col-md-6.col-lg.mb-5.mb-lg-0
         .tarjeta.color-primario
           .p-4

@@ -131,10 +131,103 @@
           .col-12.col-md-6
             figure
               img(src='@/assets/curso/tema1/img07.svg')
-      div(x="45.1%" y="76.1%")
+      div(x="45.1%" y="76.1%" tooltip="6. Objetivos del <em>footprinting</em>)")
+        .row.mb-5
+          .col-12.col-md-12
+            h5 6. Objetivos del <em>footprinting</em>
         .row.justify-content-center.align-items-center
-          .col-12.col-md-5
-            h5.mb-4 6. Objetivos del <em>footprinting</em>
+          .col-md-1
+            p.m-0.font_1 Recopilar información de red
+          .col-md-3
+            .verticalLine 
+              ul
+                li 
+                  <i class="fas fa-circle fa-xs" style= "color:#E01650"></i>
+                  strong.m-0.text.small  Nombre de dominio.
+                li 
+                  <i class="fas fa-circle fa-xs" style= "color:#E01650"></i>
+                  strong.m-0.text.small  Nombres de dominio internos.
+                li 
+                  <i class="fas fa-circle fa-xs" style= "color:#E01650"></i>
+                  strong.m-0.text.small  Direcciones IP que sean alcanzables en la red de la colectividad.
+                li 
+                  <i class="fas fa-circle fa-xs" style= "color:#E01650"></i>
+                  strong.m-0.text.small  Sitios web Rogue páginas web de información privada.
+                li 
+                  <i class="fas fa-circle fa-xs" style= "color:#E01650"></i>
+                  strong.m-0.text.small  TCP y UDP, servicios que se ejecutan.
+                li 
+                  <i class="fas fa-circle fa-xs" style= "color:#E01650"></i>
+                  strong.m-0.text.small  Protocolos de red.
+                li 
+                  <i class="fas fa-circle fa-xs" style= "color:#E01650"></i>
+                  strong.m-0.text.small  Puntos VPN.
+                li 
+                  <i class="fas fa-circle fa-xs" style= "color:#E01650"></i>
+                  strong.m-0.text.small  ACs.
+                li 
+                  <i class="fas fa-circle fa-xs" style= "color:#E01650"></i>
+                  strong.m-0.text.small  IDS que ejecutan.
+                li 
+                  <i class="fas fa-circle fa-xs" style= "color:#E01650"></i>
+                  strong.m-0.text-small  Analógico / números de teléfono digitales.
+                li
+                  <i class="fas fa-circle fa-xs" style= "color:#E01650"></i>
+                  strong.m-0.text-small  Los mecanismos de autenticación.
+          .col-md-1
+            p.m-0.font_1 Recopilar información del sistema
+          .col-md-3
+            .verticalLine 
+              ul
+                li 
+                  <i class="fas fa-circle fa-xs" style= "color:#E01650"></i>
+                  strong.m-0.text-small  Los nombres de usuario y de grupo.
+                li 
+                  <i class="fas fa-circle fa-xs" style= "color:#E01650"></i>
+                  strong.m-0.text-small  Banderas del sistema.
+                li 
+                  <i class="fas fa-circle fa-xs" style= "color:#E01650"></i>
+                  strong.m-0.text-small  Las tablas de enrutamiento.
+                li 
+                  <i class="fas fa-circle fa-xs" style= "color:#E01650"></i>
+                  strong.m-0.text-small  Información de SNMP.
+                li 
+                  <i class="fas fa-circle fa-xs" style= "color:#E01650"></i>
+                  strong.m-0.text-small  La arquitectura del sistema.
+                li 
+                  <i class="fas fa-circle fa-xs" style= "color:#E01650"></i>
+                  strong.m-0.text-small  Tipo de sistema remoto.
+                li 
+                  <i class="fas fa-circle fa-xs" style= "color:#E01650"></i>
+                  strong.m-0.text-small Los nombres de sistema.
+                li 
+                  <i class="fas fa-circle fa-xs" style= "color:#E01650"></i>
+                  strong.m-0.text-small  Contraseñas.
+          .col-md-1
+            p.m-0.font_1 Recopilar información de la organización
+          .col-md-3
+            .verticalLine 
+              ul
+                li 
+                  <i class="fas fa-circle fa-xs" style= "color:#E01650"></i>
+                  strong.m-0.text-small  Detalles del empleado.
+                li 
+                  <i class="fas fa-circle fa-xs" style= "color:#E01650"></i>
+                  strong.m-0.text-small  Página web de la organización.
+                li 
+                  <i class="fas fa-circle fa-xs" style= "color:#E01650"></i>
+                  strong.m-0.text-small  Directorios de la empresa.
+                li 
+                  <i class="fas fa-circle fa-xs" style= "color:#E01650"></i>
+                  strong.m-0.text-small  Direcciones y teléfonos.
+                li 
+                  <i class="fas fa-circle fa-xs" style= "color:#E01650"></i>
+                  strong.m-0.text-small  Antecedentes de la organización.
+                li 
+                  <i class="fas fa-circle fa-xs" style= "color:#E01650"></i>
+                  strong.m-0.text-small  News: artículos notas de prensa.
+
+
     
     Separador
 
@@ -259,8 +352,9 @@
             p El pentest de <em>footprinting</em> se utiliza para determinar la información de la organización, a disposición del público en Internet: arquitectura de red, sistemas operativos, aplicaciones y usuarios. El pentester intenta reunir la mayor cantidad de información posible acerca de la organización destino en internet y otras fuentes accesibles al público.
               br  
     
-    p.m-0.text-center(data-aos="fade") El <em>footprinting</em> es el primer paso por realizar dentro de la prueba de penetración; se deben tener presentes los siguientes aspectos:
+    p.m-0.text-center.mb-4(data-aos="fade") El <em>footprinting</em> es el primer paso por realizar dentro de la prueba de penetración; se deben tener presentes los siguientes aspectos:
 
+    
     .row.justify-content-center.align-items-center.mb-5
       .col-12.col-md-4
         .tarjeta.bg_color2.p-3.margintop_2
