@@ -43,53 +43,55 @@
 
     p.m-0.mb-4 A continuación, se analizan las posibles formas en que un atacante podría enumerar una red objetivo:
 
-    .tarjeta-color.bg_color6.p-5.mb-5  
-      SlyderA.mb-5(:datos="datosSlyder")
-        .row.justifiy-content-evenly(data-aos="fade-right")
-          .col-md-5
-            h5.mb-4 Extraer los nombres de usurario que utilizan identificadores de correo electrónico.
-            p.m-0.mb-4 Generalmente, la ID de correo electrónico contiene dos partes: nombre de usuario y nombre de dominio. La estructura de la dirección de correo electrónico es <b>"nombredeusuario@nombrededominio"</b>.
-            p.m-0 Ejemplo: <b>xyz@live.com</b> 
-            | <b>xyz</b>, carácter que precede al símbolo “@”, es el nombre de usuario.
-            p.m-0 <b>live.com</b>, carácter que sucede al símbolo “@” es el nombre de dominio.
-          .col-md-7(data-aos="fade-left")
-            figure
-              img(src='@/assets/curso/tema3/img03.png', alt='Texto que describa la imagen')
-        .row.justifiy-content-evenly
-          .col-md-5
-            h5.mb-4 Extraer los nombres de usuario utilizando SNMP.
-            p.m-0.mb-4.mb-md-0 Mediante el uso de las API de SNMP, los atacantes pueden adivinar las cadenas a través de las cuales pueden extraer el nombre de usuario requerido.
-          .col-md-7
-            figure
-              img(src='@/assets/curso/tema3/img04.png', alt='Texto que describa la imagen')
-        .row.justifiy-content-around
-          .col-md-5
-            h5.mb-4 Extraer información con las contraseñas predeterminadas.
-            p.m-0.mb-4.mb-md-0 Hay muchos recursos en línea que publican muchas contraseñas predeterminadas asignadas por el fabricante para sus productos. A menudo, los usuarios olvidan cambiar las contraseñas predeterminadas que ayudan a un atacante a enumerar sus datos fácilmente.
-          .col-md-7
-            figure
-              img(src='@/assets/curso/tema3/img05.png', alt='Texto que describa la imagen')
-        .row.justifiy-content-evenly
-          .col-md-5
-            h5.m-0 Fuerza bruta. 
-            h5.m-0.mb-4 Directorio activo. 
-            p.m-0.mb-4.mb-md-0 El directorio activo de Microsoft es susceptible a una debilidad de enumeración de nombres de usuario en el momento de la validación de entrada proporcionada por el usuario. Esto es consecuencia de un error de diseño en la aplicación. El atacante se beneficia de ello y explota la debilidad para enumerar nombres de usuario válidos.
-          .col-md-7
-            figure
-              img(src='@/assets/curso/tema3/img06.png', alt='Texto que describa la imagen')
-        .row.justifiy-content-evenly
-          .col-md-4
-            h5.mb-4 Extracto de los grupos de usuarios de las ventanas.
-          .col-md-7
-            figure
-              img(src='@/assets/curso/tema3/img07.png', alt='Texto que describa la imagen')
-        .row.justifiy-content-evenly
-          .col-md-5
-            h5.mb-4 Extraer información mediante DNS zona de transferencia.
-            p.m-0.mb-4.mb-md-0 Un atacante puede obtener información topológica valiosa sobre la red interna del objetivo utilizando la transferencia de zona DNS.
-          .col-md-7
-            figure
-              img(src='@/assets/curso/tema3/img08.png', alt='Texto que describa la imagen')
+    .row.justify-content-center
+      .col-12.col-md-12
+        .tarjeta-color.p-5.mb-5.bg_color6
+          SlyderA(tipo="b").color_bot_slyder2_t1
+            .row.justify-content-around(data-aos="fade-right")
+              .col-md-5
+                h5.mb-4 Extraer los nombres de usurario que utilizan identificadores de correo electrónico.
+                p.m-0.mb-4 Generalmente, la ID de correo electrónico contiene dos partes: nombre de usuario y nombre de dominio. La estructura de la dirección de correo electrónico es <b>"nombredeusuario@nombrededominio"</b>.
+                p.m-0 Ejemplo: <b>xyz@live.com</b> 
+                | <b>xyz</b>, carácter que precede al símbolo “@”, es el nombre de usuario.
+                p.m-0 <b>live.com</b>, carácter que sucede al símbolo “@” es el nombre de dominio.
+              .col-md-7(data-aos="fade-left")
+                figure
+                  img(src='@/assets/curso/tema3/img03.png', alt='Texto que describa la imagen')
+            .row.justifiy-content-around(data-aos="fade-right")
+              .col-md-5
+                h5.mb-4 Extraer los nombres de usuario utilizando SNMP.
+                p.m-0.mb-4.mb-md-0 Mediante el uso de las API de SNMP, los atacantes pueden adivinar las cadenas a través de las cuales pueden extraer el nombre de usuario requerido.
+              .col-md-7
+                figure
+                  img(src='@/assets/curso/tema3/img04.png', alt='Texto que describa la imagen')
+            .row.justifiy-content-around
+              .col-md-5
+                h5.mb-4 Extraer información con las contraseñas predeterminadas.
+                p.m-0.mb-4.mb-md-0 Hay muchos recursos en línea que publican muchas contraseñas predeterminadas asignadas por el fabricante para sus productos. A menudo, los usuarios olvidan cambiar las contraseñas predeterminadas que ayudan a un atacante a enumerar sus datos fácilmente.
+              .col-md-7
+                figure
+                  img(src='@/assets/curso/tema3/img05.png', alt='Texto que describa la imagen')
+            .row.justifiy-content-around(data-aos="fade-right")
+              .col-md-5
+                h5.m-0 Fuerza bruta. 
+                h5.m-0.mb-4 Directorio activo. 
+                p.m-0.mb-4.mb-md-0 El directorio activo de Microsoft es susceptible a una debilidad de enumeración de nombres de usuario en el momento de la validación de entrada proporcionada por el usuario. Esto es consecuencia de un error de diseño en la aplicación. El atacante se beneficia de ello y explota la debilidad para enumerar nombres de usuario válidos.
+              .col-md-7
+                figure
+                  img(src='@/assets/curso/tema3/img06.png', alt='Texto que describa la imagen')
+            .row.justifiy-content-around(data-aos="fade-right")
+              .col-md-4
+                h5.mb-4 Extracto de los grupos de usuarios de las ventanas.
+              .col-md-7
+                figure
+                  img(src='@/assets/curso/tema3/img07.png', alt='Texto que describa la imagen')
+            .row.justifiy-content-around(data-aos="fade-right")
+              .col-md-5
+                h5.mb-4 Extraer información mediante DNS zona de transferencia.
+                p.m-0.mb-4.mb-md-0 Un atacante puede obtener información topológica valiosa sobre la red interna del objetivo utilizando la transferencia de zona DNS.
+              .col-md-7
+                figure
+                  img(src='@/assets/curso/tema3/img08.png', alt='Texto que describa la imagen')
 
     Separador
 

@@ -26,110 +26,112 @@
             .video
               iframe(width="560" height="315" src="https://www.youtube.com/embed/W2xX-bc0aj8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
       
-    Separador
+      Separador
 
-    #t_2_1.titulo-segundo.color-acento-contenido(data-aos="zoom-out-right")
-      h2 2.1	Concepto y generalidades
+      #t_2_1.titulo-segundo.color-acento-contenido(data-aos="zoom-out-right")
+        h2 2.1	Concepto y generalidades
 
-    .row.justify-content-center.align-items-center.mb-5.mt-4           
-      .col-lg-10 
-        .bloque-texto-g.color-primario.p-3.p-sm-4.p-md-5(data-aos="flip-down")
-          .bloque-texto-g__img(
-            :style="{'background-image': `url(${require('@/assets/curso/tema2/img02.png')})`}"
-          )
-          .bloque-texto-g__texto.p-4
-            p.m-0 Para que un <em>hacker</em> ético pueda realizar exploraciones a los sistemas y redes, debe determinar las metodologías de escaneo, las cuales se pueden resumir en: comprobación de sistemas vivos, comprobación de puertos abiertos, captura de banderas, análisis de búsqueda de vulnerabilidades, dibujo de diagramas de red, preparación de <em>proxies.</em>
-              br  
+      .row.justify-content-center.align-items-center.mb-5.mt-4           
+        .col-lg-10 
+          .bloque-texto-g.color-primario.p-3.p-sm-4.p-md-5(data-aos="flip-down")
+            .bloque-texto-g__img(
+              :style="{'background-image': `url(${require('@/assets/curso/tema2/img02.png')})`}"
+            )
+            .bloque-texto-g__texto.p-4
+              p.m-0 Para que un <em>hacker</em> ético pueda realizar exploraciones a los sistemas y redes, debe determinar las metodologías de escaneo, las cuales se pueden resumir en: comprobación de sistemas vivos, comprobación de puertos abiertos, captura de banderas, análisis de búsqueda de vulnerabilidades, dibujo de diagramas de red, preparación de <em>proxies.</em>
+                br  
 
-    p.m-0.mb-4 Tenga en cuenta las siguientes particularidades de las exploraciones y escaneos que puede realizar el hacker ético:
+      p.m-0.mb-4 Tenga en cuenta las siguientes particularidades de las exploraciones y escaneos que puede realizar el hacker ético:
 
-    .tarjeta-color.bg_color6.p-5.mb-5  
-      SlyderA.mb-5(:datos="datosSlyder")
-        .row.justifiy-content-evenly(data-aos="fade-right")
-          .col-md-5
-            h5.mb-4 Comprobación de sistemas vivos escaneo ICMP
-            p.m-0.mb-4.mb-md-0 El ICMP (<em>Internet Control Message Protocol</em>) es un protocolo que los dispositivos de red (por ejemplo, los enrutadores) utilizan para generar mensajes de error cuando los problemas de la red impiden que los paquetes IP pasen.
-          .col-md-7
-            figure
-              img.mx-auto.d-block(data-aos="fade-left")(src='@/assets/curso/tema2/img03.png', alt='Texto que describa la imagen')
-        .row.justifiy-content-evenly
-          .col-md-5
-            h5.mb-4 Ping ICMP
-            p.m-0.mb-4.mb-md-0 El Ping utiliza dos códigos ICMP: 8 (solicitud de eco) y 0 (respuesta de eco). Cuando se emite el comando Ping en el <em>prompt</em>, el programa Ping envía un paquete ICMP que contiene el código 8 en el campo <em>Type</em>; la respuesta tendrá un tipo de 0. El programa multiplica por el espacio entre el envío del paquete de solicitud de eco y la llegada de la respuesta. Así, puede obtener el "tiempo de ida y vuelta" de un paquete a la red de destino dada y de vuelta.
-          .col-md-7
-            figure
-              img(src='@/assets/curso/tema2/img04.svg', alt='Texto que describa la imagen')
-        .row.justifiy-content-around
-          .col-md-5
-            h5.mb-4 Paquete de solicitud de eco
-            p.m-0.mb-4.mb-md-0 Es inusual en el sentido de que es el único paquete ICMP que se envía sin ser provocado por un error. Por lo tanto, Ping no tiene que emular una condición de error para obtener un mensaje ICMP de vuelta. Ping tiene dos opciones que permiten especificar una lista de direcciones para el camino que debe tomar la transmisión: "-j", que sugiere una ruta, y "-k", que dicta la ruta.
-          .col-md-7
-            figure
-              img(src='@/assets/curso/tema2/img05.svg', alt='Texto que describa la imagen')
-        .row.justifiy-content-evenly
-          .col-md-5
-            h5.mb-4 Barrido de Ping Sweep
-            p.m-0.mb-4.mb-md-0 Determina los <em>hosts</em> vivos de un rango de direcciones IP, mediante envío de peticiones de eco ICMP a múltiples <em>hosts</em>. Si un <em>host</em> está vivo, devolverá una respuesta de eco ICMP. Es una técnica usada para identificar si los anfitriones están activos en las redes usando sus direcciones IP. El método de barrido de Ping se utiliza para hacer Ping a muchos <em>hosts</em> a la vez. Por ejemplo, si hay una red con una identificación de red 192.10.0.0/24, entonces es muy simple identificar el número total de <em>hosts</em> allí mediante un Ping de barrido de esta red. 
-          .col-md-7
-            figure
-              img(src='@/assets/curso/tema2/img06.svg', alt='Texto que describa la imagen')
-        .row.justifiy-content-evenly
-          .col-md-5
-            h5.mb-4 Three Way Handshake
-            p.m-0.mb-4.mb-md-0 También denominado TCP 3-<em>way handshake</em>, es un proceso utilizado en una red TCP/IP para hacer una conexión entre el servidor y el cliente, es un proceso de tres pasos que requiere que, tanto el cliente como el servidor, intercambien paquetes de sincronización y reconocimiento antes de que comience el verdadero proceso de comunicación de datos.
-          .col-md-7
-            figure
-              img(src='@/assets/curso/tema2/img07.svg', alt='Texto que describa la imagen')
+      .row.justify-content-center
+        .col-12.col-md-12
+          .tarjeta-color.p-5.mb-5.bg_color10
+            SlyderA(tipo="b").color_bot_slyder1_t1
+              .row.justify-content-around
+                .col-md-5(data-aos="fade-right")
+                  h5.mb-4 Comprobación de sistemas vivos escaneo ICMP
+                  p.m-0.mb-4.mb-md-0 El ICMP (<em>Internet Control Message Protocol</em>) es un protocolo que los dispositivos de red (por ejemplo, los enrutadores) utilizan para generar mensajes de error cuando los problemas de la red impiden que los paquetes IP pasen.
+                .col-md-7
+                  figure
+                    img(data-aos="fade-left")(src='@/assets/curso/tema2/img03.png', alt='Texto que describa la imagen')
+              .row.justify-content-around
+                .col-md-5
+                  h5.mb-4 Ping ICMP
+                  p.m-0.mb-4.mb-md-0 El Ping utiliza dos códigos ICMP: 8 (solicitud de eco) y 0 (respuesta de eco). Cuando se emite el comando Ping en el <em>prompt</em>, el programa Ping envía un paquete ICMP que contiene el código 8 en el campo <em>Type</em>; la respuesta tendrá un tipo de 0. El programa multiplica por el espacio entre el envío del paquete de solicitud de eco y la llegada de la respuesta. Así, puede obtener el "tiempo de ida y vuelta" de un paquete a la red de destino dada y de vuelta.
+                .col-md-7
+                  figure
+                    img(src='@/assets/curso/tema2/img04.svg', alt='Texto que describa la imagen')
+              .row.justifiy-content-around
+                .col-md-5
+                  h5.mb-4 Paquete de solicitud de eco
+                  p.m-0.mb-4.mb-md-0 Es inusual en el sentido de que es el único paquete ICMP que se envía sin ser provocado por un error. Por lo tanto, Ping no tiene que emular una condición de error para obtener un mensaje ICMP de vuelta. Ping tiene dos opciones que permiten especificar una lista de direcciones para el camino que debe tomar la transmisión: "-j", que sugiere una ruta, y "-k", que dicta la ruta.
+                .col-md-7
+                  figure
+                    img(src='@/assets/curso/tema2/img05.svg', alt='Texto que describa la imagen')
+              .row.justifiy-content-evenly
+                .col-md-5
+                  h5.mb-4 Barrido de Ping Sweep
+                  p.m-0.mb-4.mb-md-0 Determina los <em>hosts</em> vivos de un rango de direcciones IP, mediante envío de peticiones de eco ICMP a múltiples <em>hosts</em>. Si un <em>host</em> está vivo, devolverá una respuesta de eco ICMP. Es una técnica usada para identificar si los anfitriones están activos en las redes usando sus direcciones IP. El método de barrido de Ping se utiliza para hacer Ping a muchos <em>hosts</em> a la vez. Por ejemplo, si hay una red con una identificación de red 192.10.0.0/24, entonces es muy simple identificar el número total de <em>hosts</em> allí mediante un Ping de barrido de esta red. 
+                .col-md-7
+                  figure
+                    img(src='@/assets/curso/tema2/img06.svg', alt='Texto que describa la imagen')
+              .row.justifiy-content-evenly
+                .col-md-5
+                  h5.mb-4 Three Way Handshake
+                  p.m-0.mb-4.mb-md-0 También denominado TCP 3-<em>way handshake</em>, es un proceso utilizado en una red TCP/IP para hacer una conexión entre el servidor y el cliente, es un proceso de tres pasos que requiere que, tanto el cliente como el servidor, intercambien paquetes de sincronización y reconocimiento antes de que comience el verdadero proceso de comunicación de datos.
+                .col-md-7
+                  figure
+                    img(src='@/assets/curso/tema2/img07.svg', alt='Texto que describa la imagen')
 
-    .row.justifiy-content-center
-      .col-12.col-md-4
-        figure
-          img(data-aos="fade-right")(src='@/assets/curso/tema2/img08.svg')
-      .col-12.col-md-8
-        .cajon.color-primario.p-3.mb-4(data-aos="fade-left")
-          h5.ms-3.pt-2 Proceso de apretón de manos
-          p.ms-3.pt-2 El proceso de apretón de manos de tres vías está diseñado de tal manera que ambos extremos ayudan a iniciar, negociar y separar las conexiones de sockets TCP al mismo tiempo. También permite transferir múltiples conexiones de sockets TCP, en ambas direcciones, al mismo tiempo. 
+      .row.justifiy-content-center
+        .col-12.col-md-4
+          figure
+            img(data-aos="fade-right")(src='@/assets/curso/tema2/img08.svg')
+        .col-12.col-md-8
+          .cajon.color-primario.p-3.mb-4(data-aos="fade-left")
+            h5.ms-3.pt-2 Proceso de apretón de manos
+            p.ms-3.pt-2 El proceso de apretón de manos de tres vías está diseñado de tal manera que ambos extremos ayudan a iniciar, negociar y separar las conexiones de sockets TCP al mismo tiempo. También permite transferir múltiples conexiones de sockets TCP, en ambas direcciones, al mismo tiempo. 
 
-    p.m-0.mb-4 He aquí los tres pasos:
+      p.m-0.mb-4 He aquí los tres pasos:
 
-    TabsA.color-acento-botones.mb-5(data-aos="fade-right")
-      .tarjeta.color-acento-botones--borde.p-4.border_radius1(titulo="PASO 1")
-        .row.justify-content-center.align-items-center
-          .col-12.col-md-7
-            h4 PASO 1
-            p En el primer paso el cliente establece una conexión con un servidor. Envía un segmento con SYN e informa al servidor acerca de que el cliente debe iniciar la comunicación, y con lo que debe ser su número de secuencia.
-          .col-12.col-md-4
-            figure
-             img(src='@/assets/curso/tema2/img10.svg')
+      TabsA.color-acento-botones.mb-5(data-aos="fade-right")
+        .tarjeta.color-acento-botones--borde.p-4.border_radius1(titulo="PASO 1")
+          .row.justify-content-center.align-items-center
+            .col-12.col-md-7
+              h4 PASO 1
+              p En el primer paso el cliente establece una conexión con un servidor. Envía un segmento con SYN e informa al servidor acerca de que el cliente debe iniciar la comunicación, y con lo que debe ser su número de secuencia.
+            .col-12.col-md-4
+              figure
+              img(src='@/assets/curso/tema2/img10.svg')
+        
+        .tarjeta.color-acento-botones--borde.p-4.border_radius1(titulo="PASO 2")
+          .row.justify-content-center.align-items-center
+            .col-12.col-md-7
+              h4 PASO 2
+              p En este paso el servidor responde a la solicitud del cliente con la señal SYN-ACK establecida. ACK le ayuda a significar la respuesta del segmento que se recibe y SYN significa qué número de secuencia debe ser capaz de comenzar con los segmentos.
+            .col-12.col-md-4
+              figure
+              img(src='@/assets/curso/tema2/img09.svg')
+
+        .tarjeta.color-acento-botones--borde.p-4.border_radius1(titulo="PASO 3")
+          .row.justify-content-center.align-items-center
+            .col-12.col-md-7
+              h4 PASO 3
+              p En este último paso el cliente reconoce la respuesta del servidor, y ambos crean una conexión estable que iniciará el proceso de transferencia real de datos.
+            .col-12.col-md-4
+              figure
+              img(src='@/assets/curso/tema2/img11.svg')
       
-      .tarjeta.color-acento-botones--borde.p-4.border_radius1(titulo="PASO 2")
-        .row.justify-content-center.align-items-center
-          .col-12.col-md-7
-            h4 PASO 2
-            p En este paso el servidor responde a la solicitud del cliente con la señal SYN-ACK establecida. ACK le ayuda a significar la respuesta del segmento que se recibe y SYN significa qué número de secuencia debe ser capaz de comenzar con los segmentos.
-          .col-12.col-md-4
-            figure
-             img(src='@/assets/curso/tema2/img09.svg')
+      .row.justifiy-content-center.align-items-center
+        .col-12.col-md-8
+          .cajon.color-primario.p-3.mb-4(data-aos="fade-right")
+            h5.ms-1.pt-2 Banderas de comunicación TCP
+            p.ms-1.pt-2 Las banderas de TCP tienen la misma función de mostrar cambios, situaciones o condiciones de la información; podrían compararse con un semáforo, ya que alertan sobre cuándo se debe parar, seguir o tener precaución. Estas banderas informan el estado de la información, de extremo a extremo, para que los datos lleguen íntegros (tal cual como son).
+        .col-12.col-md-4
+          figure
+            img(data-aos="fade-left")(src='@/assets/curso/tema2/img12.svg')
 
-      .tarjeta.color-acento-botones--borde.p-4.border_radius1(titulo="PASO 3")
-        .row.justify-content-center.align-items-center
-          .col-12.col-md-7
-            h4 PASO 3
-            p En este último paso el cliente reconoce la respuesta del servidor, y ambos crean una conexión estable que iniciará el proceso de transferencia real de datos.
-          .col-12.col-md-4
-            figure
-             img(src='@/assets/curso/tema2/img11.svg')
-    
-    .row.justifiy-content-center.align-items-center
-      .col-12.col-md-8
-        .cajon.color-primario.p-3.mb-4(data-aos="fade-right")
-          h5.ms-1.pt-2 Banderas de comunicación TCP
-          p.ms-1.pt-2 Las banderas de TCP tienen la misma función de mostrar cambios, situaciones o condiciones de la información; podrían compararse con un semáforo, ya que alertan sobre cuándo se debe parar, seguir o tener precaución. Estas banderas informan el estado de la información, de extremo a extremo, para que los datos lleguen íntegros (tal cual como son).
-      .col-12.col-md-4
-        figure
-          img(data-aos="fade-left")(src='@/assets/curso/tema2/img12.svg')
-
-    ImagenInfografica.color-secundario.mb-5(data-aos="fade-up")
+    ImagenInfografica.manito.color-secundario.mb-5(data-aos="fade-up")
       template(v-slot:imagen)
         figure
           img(src='@/assets/curso/tema2/imginfografica_t2.svg', alt='Texto que describa la imagen')
@@ -299,12 +301,12 @@
         .col-12.col-md-5
           figure
             img(data-aos="fade-right")(src='@/assets/curso/tema2/img20.png')
-        .col-12.col-md-7(data-aos="fade-left")
+        .col-12.col-md-7(data-aos="fade-left").mt-5
           .h5.mb-4 Anonimizadores 
           p.m-o Los sitios anonimizadores acceden a Internet a su nombre, protegiendo la información personal del usuario; Un anonimizador protege toda la información de identificación de una computadora, mientras navega en lugar de la persona, permitiendo permanecer, al menos, un paso alejada de los sitios que visita. 
 
     p.m-0.mb-4 Estas son las particularidades de los tipos de anonimizadores:
-
+    
     .row.mb-5(data-aos="fade-right")
       .col-md-6.col-lg.mb-5.mb-lg-0
         .tarjeta.color-primario
