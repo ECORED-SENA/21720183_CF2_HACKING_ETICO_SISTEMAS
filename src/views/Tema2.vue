@@ -49,35 +49,35 @@
             SlyderA(tipo="b").color_bot_slyder1_t1
               .row.justify-content-around
                 .col-md-5(data-aos="fade-right")
-                  h5.mb-4 Comprobación de sistemas vivos escaneo ICMP
+                  h4.mb-4 Comprobación de sistemas vivos escaneo ICMP
                   p.m-0.mb-4.mb-md-0 El ICMP (<em>Internet Control Message Protocol</em>) es un protocolo que los dispositivos de red (por ejemplo, los enrutadores) utilizan para generar mensajes de error cuando los problemas de la red impiden que los paquetes IP pasen.
                 .col-md-7
                   figure
                     img(data-aos="fade-left")(src='@/assets/curso/tema2/img03.png', alt='Texto que describa la imagen')
               .row.justify-content-around
                 .col-md-5
-                  h5.mb-4 Ping ICMP
+                  h4.mb-4 Ping ICMP
                   p.m-0.mb-4.mb-md-0 El Ping utiliza dos códigos ICMP: 8 (solicitud de eco) y 0 (respuesta de eco). Cuando se emite el comando Ping en el <em>prompt</em>, el programa Ping envía un paquete ICMP que contiene el código 8 en el campo <em>Type</em>; la respuesta tendrá un tipo de 0. El programa multiplica por el espacio entre el envío del paquete de solicitud de eco y la llegada de la respuesta. Así, puede obtener el "tiempo de ida y vuelta" de un paquete a la red de destino dada y de vuelta.
                 .col-md-7
                   figure
                     img(src='@/assets/curso/tema2/img04.svg', alt='Texto que describa la imagen')
               .row.justifiy-content-around
                 .col-md-5
-                  h5.mb-4 Paquete de solicitud de eco
+                  h4.mb-4 Paquete de solicitud de eco
                   p.m-0.mb-4.mb-md-0 Es inusual en el sentido de que es el único paquete ICMP que se envía sin ser provocado por un error. Por lo tanto, Ping no tiene que emular una condición de error para obtener un mensaje ICMP de vuelta. Ping tiene dos opciones que permiten especificar una lista de direcciones para el camino que debe tomar la transmisión: "-j", que sugiere una ruta, y "-k", que dicta la ruta.
                 .col-md-7
                   figure
                     img(src='@/assets/curso/tema2/img05.svg', alt='Texto que describa la imagen')
               .row.justifiy-content-evenly
                 .col-md-5
-                  h5.mb-4 Barrido de Ping Sweep
+                  h4.mb-4 Barrido de Ping Sweep
                   p.m-0.mb-4.mb-md-0 Determina los <em>hosts</em> vivos de un rango de direcciones IP, mediante envío de peticiones de eco ICMP a múltiples <em>hosts</em>. Si un <em>host</em> está vivo, devolverá una respuesta de eco ICMP. Es una técnica usada para identificar si los anfitriones están activos en las redes usando sus direcciones IP. El método de barrido de Ping se utiliza para hacer Ping a muchos <em>hosts</em> a la vez. Por ejemplo, si hay una red con una identificación de red 192.10.0.0/24, entonces es muy simple identificar el número total de <em>hosts</em> allí mediante un Ping de barrido de esta red. 
                 .col-md-7
                   figure
                     img(src='@/assets/curso/tema2/img06.svg', alt='Texto que describa la imagen')
               .row.justifiy-content-evenly
                 .col-md-5
-                  h5.mb-4 Three Way Handshake
+                  h4.mb-4 Three Way Handshake
                   p.m-0.mb-4.mb-md-0 También denominado TCP 3-<em>way handshake</em>, es un proceso utilizado en una red TCP/IP para hacer una conexión entre el servidor y el cliente, es un proceso de tres pasos que requiere que, tanto el cliente como el servidor, intercambien paquetes de sincronización y reconocimiento antes de que comience el verdadero proceso de comunicación de datos.
                 .col-md-7
                   figure
@@ -299,7 +299,7 @@
     .bg_fondo3_t2.mb-4.mt-5
       .row.justify-content-center.align-items-center
         .col-12.col-md-5
-          figure
+          figure.ms-4.ms-md-0
             img(data-aos="fade-right")(src='@/assets/curso/tema2/img20.png')
         .col-12.col-md-7(data-aos="fade-left").mt-5
           .h5.mb-4 Anonimizadores 
@@ -312,8 +312,9 @@
         .tarjeta.color-primario
           .p-4
             .row.justify-content-center
-              .col-md-4.mb-5.margin_top3
-                img(src='@/assets/curso/tema2/img21.svg')
+              .col-md-4.mb-5
+                figure
+                  img.img.mx-auto.d-block.img100.mt-5(src='@/assets/curso/tema2/img21.svg')
             .row.justify-content-center
               .col-md-6
                 h4.text-center Anonimizador
@@ -322,8 +323,9 @@
         .tarjeta.color-primario
           .p-4
             .row.justify-content-center
-              .col-md-4.mb-5.margin_top4
-                img(src='@/assets/curso/tema2/img22.svg')
+              .col-md-4.mb-5
+                figure
+                  img.img.mx-auto.d-block.img100.mt-5(src='@/assets/curso/tema2/img22.svg')
             .row.justify-content-center
               .col-md-10
                 h4.text-center Anonimizadores en red
@@ -332,8 +334,9 @@
         .tarjeta.color-primario
           .p-4
             .row.justify-content-center
-              .col-md-4.mb-5.margin_top5
-                img(src='@/assets/curso/tema2/img23.svg')
+              .col-md-4.mb-5
+                figure
+                  img.img.mx-auto.d-block.img100.mt-5(src='@/assets/curso/tema2/img23.svg')
             .row.justify-content-center
               .col-md-12
                 h4.text-center Anonimizadores de un solo punto

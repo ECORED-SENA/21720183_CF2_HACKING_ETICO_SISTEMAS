@@ -17,99 +17,99 @@
           figure
             img(src='@/assets/curso/tema1/img01.svg' data-aos="zoom-in-down") 
     
-    .row.mb-4.align-items-end
-      .col-12.col-md-4
-        figure
-          img.d-none.d-lg-block(src='@/assets/curso/tema1/img02.png' data-aos="zoom-in-down") 
-      .col-12.col-md-4
-        .tarjeta.bg_color3.p-3.mb-4.mb-md-0.height1(data-aos="fade-left")
-          .row
-            .col-md-2
-              figure
-                img.img400(src='@/assets/curso/tema1/img05.svg', alt='Texto que describa la imagen')
-            .col-md-10
-              h3.mt-2 Tenga presente
-            p.m-0.ms-2 La información que el hacker busca durante la fase de huella es cualquier elemento que dé pistas sobre la arquitectura de la red, el servidor y los tipos de aplicaciones donde se almacenan los datos valiosos.
-      .col-12.col-md-4
-        .tarjeta.bg_color3.p-3(data-aos="fade-left")
-          .row
-            .col-md-2
-              figure
-                img.img400(src='@/assets/curso/tema1/img05.svg', alt='Texto que describa la imagen')
-            .col-md-10
-              h3.mt-2 Importante
-            p.m-0 Antes de que se pueda lanzar un ataque o un exploit, lo que el hacker también busca es el sistema operativo y la versión, así como los tipos de aplicaciones deben ser descubiertos para que se pueda lanzar el ataque más efectivo contra el objetivo.
+      .row.mb-4.align-items-end
+        .col-12.col-md-4
+          figure
+            img.d-none.d-lg-block(src='@/assets/curso/tema1/img02.png' data-aos="zoom-in-down") 
+        .col-12.col-md-4
+          .tarjeta.bg_color3.p-3.mb-4.mb-md-0.height1(data-aos="fade-left")
+            .row
+              .col-md-2
+                figure
+                  img.img400(src='@/assets/curso/tema1/img05.svg', alt='Texto que describa la imagen')
+              .col-md-10
+                h3.mt-2 Tenga presente
+              p.m-0.ms-2 La información que el hacker busca durante la fase de huella es cualquier elemento que dé pistas sobre la arquitectura de la red, el servidor y los tipos de aplicaciones donde se almacenan los datos valiosos.
+        .col-12.col-md-4
+          .tarjeta.bg_color3.p-3(data-aos="fade-left")
+            .row
+              .col-md-2
+                figure
+                  img.img400(src='@/assets/curso/tema1/img05.svg', alt='Texto que describa la imagen')
+              .col-md-10
+                h3.mt-2 Importante
+              p.m-0 Antes de que se pueda lanzar un ataque o un exploit, lo que el hacker también busca es el sistema operativo y la versión, así como los tipos de aplicaciones deben ser descubiertos para que se pueda lanzar el ataque más efectivo contra el objetivo.
 
-    p Estos son algunos de los datos que se deben reunir, sobre un objetivo, durante el <em>footprinting</em>:
+      p Estos son algunos de los datos que se deben reunir, sobre un objetivo, durante el <em>footprinting</em>:
 
-    .row.mb-4.align-items-center
-      .col-12.col-md-3
-        ul
-          li 
-            i.fas.fa-check-circle
-            |  Nombre de dominio.
-          li 
-            i.fas.fa-check-circle
-            |  Bloques de red.
-          li 
-            i.fas.fa-check-circle
-            |  Servicios y aplicaciones de red.
-          li 
-            i.fas.fa-check-circle
-            |  Arquitectura del sistema.
-          li 
-            i.fas.fa-check-circle
-            |  Sistema de detección de intrusos.
-      .col-12.col-md-3
-        ul
-          li 
-            i.fas.fa-check-circle
-            |  Mecanismos de autenticación.
-          li 
-            i.fas.fa-check-circle
-            |  Direcciones IP específicas.
-          li 
-            i.fas.fa-check-circle
-            |  Mecanismos de control de acceso.
-          li 
-            i.fas.fa-check-circle
-            |  Números de teléfono.
-          li 
-            i.fas.fa-check-circle
-            |  Direcciones de contacto.
-      .col-12.col-md-6
-        figure
-          img.img-fluid(data-aos="fade-left")(src='@/assets/curso/tema1/img03.png')
+      .row.mb-4.align-items-center
+        .col-12.col-md-3
+          ul
+            li 
+              i.fas.fa-check-circle
+              |  Nombre de dominio.
+            li 
+              i.fas.fa-check-circle
+              |  Bloques de red.
+            li 
+              i.fas.fa-check-circle
+              |  Servicios y aplicaciones de red.
+            li 
+              i.fas.fa-check-circle
+              |  Arquitectura del sistema.
+            li 
+              i.fas.fa-check-circle
+              |  Sistema de detección de intrusos.
+        .col-12.col-md-3
+          ul
+            li 
+              i.fas.fa-check-circle
+              |  Mecanismos de autenticación.
+            li 
+              i.fas.fa-check-circle
+              |  Direcciones IP específicas.
+            li 
+              i.fas.fa-check-circle
+              |  Mecanismos de control de acceso.
+            li 
+              i.fas.fa-check-circle
+              |  Números de teléfono.
+            li 
+              i.fas.fa-check-circle
+              |  Direcciones de contacto.
+        .col-12.col-md-6
+          figure
+            img.img-fluid(data-aos="fade-left")(src='@/assets/curso/tema1/img03.png')
 
-    p.m-0 Una vez que esta información es compilada, puede dar a un hacker una mejor visión de la organización, donde se almacena la información valiosa y cómo se puede acceder a ella. 
+      p.m-0 Una vez que esta información es compilada, puede dar a un hacker una mejor visión de la organización, donde se almacena la información valiosa y cómo se puede acceder a ella. 
 
-    Separador
+      Separador
 
-    #t_1_1.titulo-segundo.color-acento-contenido(data-aos="zoom-out-right")
-      h2 1.1	Concepto y generalidades
+      #t_1_1.titulo-segundo.color-acento-contenido(data-aos="zoom-out-right")
+        h2 1.1	Concepto y generalidades
 
-    .row.justify-content-center.align-items-center
-      .col-12.col-md-7.mt-5
-        p.mb-4 El <em>footprinting</em> es el proceso de reunir la mayor cantidad de información posible sobre un sistema/red objetivo para identificar diferentes formas de intrusión en la red de una organización. 
-        p.mb-4 Dentro de los procesos más comunes de esta técnica están:
-        .row.justify-content-center
-          .col-12.col-md-10
-            ul
-              li 
-                i.fas.fa-check-circle
-                |  Recoger información básica.
-              li 
-                i.fas.fa-check-circle
-                |  Encuentra la versión del sistema operativo, la edición del servidor web, etc.
-              li 
-                i.fas.fa-check-circle
-                |  Obtener información de DNS usando Whois, etc.
-              li 
-                i.fas.fa-check-circle
-                |  Busca vulnerabilidades y explota para lanzar ataques.
-      .col-12.col-md-5.mt-5
-        figure
-          img(data-aos="fade-left")(src='@/assets/curso/tema1/img06.png')
+      .row.justify-content-center.align-items-center
+        .col-12.col-md-7.mt-5
+          p.mb-4 El <em>footprinting</em> es el proceso de reunir la mayor cantidad de información posible sobre un sistema/red objetivo para identificar diferentes formas de intrusión en la red de una organización. 
+          p.mb-4 Dentro de los procesos más comunes de esta técnica están:
+          .row.justify-content-center
+            .col-12.col-md-10
+              ul
+                li 
+                  i.fas.fa-check-circle
+                  |  Recoger información básica.
+                li 
+                  i.fas.fa-check-circle
+                  |  Encuentra la versión del sistema operativo, la edición del servidor web, etc.
+                li 
+                  i.fas.fa-check-circle
+                  |  Obtener información de DNS usando Whois, etc.
+                li 
+                  i.fas.fa-check-circle
+                  |  Busca vulnerabilidades y explota para lanzar ataques.
+        .col-12.col-md-5.mt-5
+          figure
+            img(data-aos="fade-left")(src='@/assets/curso/tema1/img06.png')
       
     .row.justify-content-center.mt-5
       .col-12.col-md-12
@@ -129,7 +129,7 @@
             SlyderA(tipo="b").color_bot_slyder1_t1
               .row.justify-content-center.align-items-center
                 .col-md-8.mb-4.mb-md-0
-                  h5.mb-4.ms-4.ms-md-0 1. OSINT (Open Source INTelligence)
+                  h4.mb-4.ms-4.ms-md-0 1. OSINT (Open Source INTelligence)
                   p.mb-4.ms-4.ms-md-0 Significa inteligencia de código abierto. Se refiere a cualquier información que pueda ser legalmente obtenida de fuentes públicas y gratuitas sobre un individuo u organización.
                   p.mb-4.ms-4.ms-md-0 En la práctica, esto tiende a significar información encontrada en internet, pero técnicamente cualquier información pública entra en la categoría de OSINT, ya sean libros o informes en una biblioteca pública, artículos en un periódico o declaraciones en un comunicado de prensa.
                   p.mb-4.ms-4.ms-md-0 El OSINT también incluye información que puede encontrarse en diferentes tipos de medios: en texto, en imágenes, vídeos, seminarios web, discursos públicos y conferencias.        
@@ -139,7 +139,7 @@
 
               .row.justify-content-center.align-items-center
                 .col-md-8.mb-4.mb-md-0
-                  h5.mb-5.ms-4.ms-md-0 2. Recopilación activa de información
+                  h4.mb-5.ms-4.ms-md-0 2. Recopilación activa de información
                   p.mb-4.ms-4.ms-md-0 Es de gran efectividad, pero no es el mejor aliado, si de anonimato se quiere hablar; puede llamarse en demasía, la atención del objetivo.
                   ul.lista-ul 
                     li
@@ -159,7 +159,7 @@
 
               .row.justify-content-center.align-items-center
                 .col-md-8.mb-4.mb-md-0
-                  h5.mb-5.ms-4.ms-md-0 3. Footprinting anónimo 
+                  h4.mb-5.ms-4.ms-md-0 3. Footprinting anónimo 
                   p.mb-4.ms-4.ms-md-0 Recopila información desde donde no se pueda identificar al autor de la información.
                   p.mb-4.ms-4.ms-md-0 Este recopila información de forma anónima para que los resultados no puedan ser rastreados.       
                 .col-md-3
@@ -168,7 +168,7 @@
 
               .row.justify-content-center.align-items-center
                 .col-md-8.mb-4.mb-md-0
-                  h5.mb-5.ms-4.ms-md-0 4. Footprinting seudónimo
+                  h4.mb-5.ms-4.ms-md-0 4. Footprinting seudónimo
                   p.mb-4.ms-4.ms-md-0 Recopila información que pudiera ser publicada con nombre diferente para mantener la privacidad que se encuentre publicada en internet pero no directamente vinculada al nombre del autor; este puede usar un seudónimo.      
                 .col-md-3
                   figure
@@ -176,7 +176,7 @@
   
               .row.justify-content-center.align-items-center
                 .col-md-8.mb-4.mb-md-0
-                  h5.mb-5.ms-3 5. Amenazas del footprinting
+                  h4.mb-5.ms-3 5. Amenazas del footprinting
                   p.mb-5.ms-3 Los atacantes reúnen información valiosa a nivel de sistema, tales como detalles de la cuenta o perfil, el sistema operativo y otras versiones de software, nombres de servidor y los detalles del esquema de base de datos con la técnica de footprinting.
                   p.mb-4.ms-3 Algunas amenazas son:
                   .row.align-items-center
@@ -212,7 +212,7 @@
   
               .row.justify-content-center
                 .col-md-10.mb-4.mb-md-0
-                  h5.mb-3.mt-5 6. Objetivos del footprinting
+                  h4.mb-3.mt-5 6. Objetivos del footprinting
                   .tabla-b.color-acento-contenido.mb-5
                     .tabla-b__header
                       h5.mb-0(style= "color: #12263F") Recopilar información de red
@@ -259,7 +259,7 @@
                            
               .row.justify-content-center
                 .col-md-10.mb-4.mb-md-0
-                  h5 6. Objetivos del footprinting
+                  h4 6. Objetivos del footprinting
                     table.mt-3
                       thead
                         tr.bg_color9
