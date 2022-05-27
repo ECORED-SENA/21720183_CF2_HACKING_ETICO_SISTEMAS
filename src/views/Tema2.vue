@@ -8,7 +8,7 @@
       h2 Escaneo de redes y dispositivos
     
     .bg_fondo1_t2
-      .row.justify-content-center.align-items-center.mb-5.mt-4           
+      .row.justify-content-center.align-items-center.mb-5.mt-4.height__bloque-white_t3             
         .col-lg-10 
           .bloque-texto-g.color-primario.p-3.p-sm-4.p-md-5(data-aos="flip-down")
             .bloque-texto-g__img(
@@ -31,7 +31,7 @@
       #t_2_1.titulo-segundo.color-acento-contenido(data-aos="zoom-out-right")
         h2 2.1	Concepto y generalidades
 
-      .row.justify-content-center.align-items-center.mb-5.mt-4           
+      .row.justify-content-center.align-items-center.mb-5.mt-4.height__bloque-white_t3             
         .col-lg-10 
           .bloque-texto-g.color-primario.p-3.p-sm-4.p-md-5(data-aos="flip-down")
             .bloque-texto-g__img(
@@ -46,7 +46,7 @@
       .row.justify-content-center
         .col-12.col-md-12
           .tarjeta-color.p-5.mb-5.bg_color10
-            SlyderA(tipo="b").color_bot_slyder1_t1
+            SlyderA(tipo="b").color_bot_slyder1_t1.sld_2_t2
               .row.justify-content-around
                 .col-md-5(data-aos="fade-right")
                   h4.mb-4 Comprobación de sistemas vivos escaneo ICMP
@@ -83,9 +83,9 @@
                   figure
                     img(src='@/assets/curso/tema2/img07.svg', alt='Texto que describa la imagen')
 
-      .row.justifiy-content-center
+      .row.justifiy-content-center.mb-4
         .col-12.col-md-4
-          figure
+          figure.mb-4.mb-md-0
             img(data-aos="fade-right")(src='@/assets/curso/tema2/img08.svg')
         .col-12.col-md-8
           .cajon.color-primario.p-3.mb-4(data-aos="fade-left")
@@ -131,35 +131,38 @@
           figure
             img(data-aos="fade-left")(src='@/assets/curso/tema2/img12.svg')
 
-    ImagenInfografica.manito.color-secundario.mb-5(data-aos="fade-up")
-      template(v-slot:imagen)
-        figure
-          img(src='@/assets/curso/tema2/imginfografica_t2.svg', alt='Texto que describa la imagen')
-          figcaption Banderas de comunicación TCP
+    .bg_fondo5_t2
+      .row.justify-content-center
+        .col-md-10
+          ImagenInfografica.manito.color-secundario.mb-5(data-aos="fade-up")
+            template(v-slot:imagen)
+              figure
+                img(src='@/assets/curso/tema2/imginfografica_t2.svg', alt='Texto que describa la imagen')
+                figcaption Banderas de comunicación TCP
 
-      .tarjeta.color-acento-contenido.p-3(x="12.7%" y="32.2%")
-        .h5.mb-2 Sincronización (SYN) 
-        p Se utiliza en el primer paso de la fase de establecimiento de la conexión o el proceso de apretón de manos de tres vías entre los dos anfitriones. Solo el primer paquete del remitente y del receptor debe tener esta bandera. Se utiliza para sincronizar el número de secuencia, es decir, para indicar al otro extremo el número de secuencia que debe exceptuar.
+            .tarjeta.color-acento-contenido.p-3(x="12.7%" y="32.2%")
+              .h5.mb-2 Sincronización (SYN) 
+              p Se utiliza en el primer paso de la fase de establecimiento de la conexión o el proceso de apretón de manos de tres vías entre los dos anfitriones. Solo el primer paquete del remitente y del receptor debe tener esta bandera. Se utiliza para sincronizar el número de secuencia, es decir, para indicar al otro extremo el número de secuencia que debe exceptuar.
 
-      .tarjeta.color-acento-contenido.p-3(x="12.7%" y="57.8%")
-        .h5.mb-2 Acuse de recibo (ACK) 
-        p Se utiliza para acusar recibo de los paquetes que son recibidos con éxito por el host. El indicador se establece si el campo de número de confirmación contiene un número de confirmación válido.
+            .tarjeta.color-acento-contenido.p-3(x="12.7%" y="57.8%")
+              .h5.mb-2 Acuse de recibo (ACK) 
+              p Se utiliza para acusar recibo de los paquetes que son recibidos con éxito por el host. El indicador se establece si el campo de número de confirmación contiene un número de confirmación válido.
 
-      .tarjeta.color-acento-contenido.p-3(x="12.7%" y="84%")
-        .h5.mb-2 Finalizar (FIN) 
-        p Se utiliza para solicitar la terminación de la conexión, es decir, cuando no hay más datos del remitente solicita la terminación de la conexión. Este es el último paquete enviado por el remitente. Libera los recursos reservados y termina la conexión con gracia.
+            .tarjeta.color-acento-contenido.p-3(x="12.7%" y="84%")
+              .h5.mb-2 Finalizar (FIN) 
+              p Se utiliza para solicitar la terminación de la conexión, es decir, cuando no hay más datos del remitente solicita la terminación de la conexión. Este es el último paquete enviado por el remitente. Libera los recursos reservados y termina la conexión con gracia.
 
-      .tarjeta.color-acento-contenido.p-3(x="87.4%" y="32%")
-        .h5.mb-2 Reset (RST) 
-        p Se utiliza para terminar la conexión si el remitente RST siente que algo está mal con la conexión TCP o que la conversación no debería existir. Puede ser enviado desde el lado del receptor cuando el paquete es enviado a un host particular que no lo esperaba.
+            .tarjeta.color-acento-contenido.p-3(x="87.4%" y="32%")
+              .h5.mb-2 Reset (RST) 
+              p Se utiliza para terminar la conexión si el remitente RST siente que algo está mal con la conexión TCP o que la conversación no debería existir. Puede ser enviado desde el lado del receptor cuando el paquete es enviado a un host particular que no lo esperaba.
 
-      .tarjeta.color-acento-contenido.p-3(x="87.4%" y="57.8%")
-        .h5.mb-2 Push (PSH)
-        p La capa de transporte por defecto espera durante algún tiempo a que la capa de aplicación envíe suficientes datos, iguales al tamaño máximo del segmento para que el número de paquetes transmitidos en la red se reduzca al mínimo, lo cual no es deseable por alguna aplicación, como las aplicaciones interactivas (chat). De manera similar, la capa de transporte en el extremo del receptor almacena los paquetes y los transmite a la capa de aplicación, si cumple ciertos criterios.
+            .tarjeta.color-acento-contenido.p-3(x="87.4%" y="57.8%")
+              .h5.mb-2 Push (PSH)
+              p La capa de transporte por defecto espera durante algún tiempo a que la capa de aplicación envíe suficientes datos, iguales al tamaño máximo del segmento para que el número de paquetes transmitidos en la red se reduzca al mínimo, lo cual no es deseable por alguna aplicación, como las aplicaciones interactivas (chat). De manera similar, la capa de transporte en el extremo del receptor almacena los paquetes y los transmite a la capa de aplicación, si cumple ciertos criterios.
 
-      .tarjeta.color-acento-contenido.p-3(x="87.4%" y="84%")
-        .h5.mb-2 Urgente (URG)
-        p Los datos dentro de un segmento con URG = 1 bandera se transmite a la capa de aplicación inmediatamente, aunque haya más datos que dar a la capa de aplicación. Se utiliza para notificar al receptor que procese los paquetes urgentes antes de procesar todos los demás paquetes. Se notificará al receptor cuando se hayan recibido todos los datos urgentes conocidos.
+            .tarjeta.color-acento-contenido.p-3(x="87.4%" y="84%")
+              .h5.mb-2 Urgente (URG)
+              p Los datos dentro de un segmento con URG = 1 bandera se transmite a la capa de aplicación inmediatamente, aunque haya más datos que dar a la capa de aplicación. Se utiliza para notificar al receptor que procese los paquetes urgentes antes de procesar todos los demás paquetes. Se notificará al receptor cuando se hayan recibido todos los datos urgentes conocidos.
     
     Separador
 
@@ -171,10 +174,10 @@
         .cajon.color-acento-contenido.p-2.mb-5.mb-md-0(data-aos="fade-left")
           .row.justify-content-around.align-items-center
             .col-md-10
-              p.m-0.ms-4 Hablar de estas para identificar diferentes vulnerabilidades en un sistema, consiste tanto en permanecer en el anonimato como en falsificar la identidad de un dispositivo que era confiable por los sistemas defensivos; todo con el fin de realizar intrusiones y analizar qué fallas existen en las redes y solventarlas.
+              p.m-0.ms-4.mt-4.mt-md-0 Hablar de estas para identificar diferentes vulnerabilidades en un sistema, consiste tanto en permanecer en el anonimato como en falsificar la identidad de un dispositivo que era confiable por los sistemas defensivos; todo con el fin de realizar intrusiones y analizar qué fallas existen en las redes y solventarlas.
             .col-md-2
               figure
-                img(src='@/assets/curso/tema2/img13.svg')
+                img.img135(src='@/assets/curso/tema2/img13.svg')
     
     p.m-0.mb-5 Entre las herramientas más comunes, se pueden mencionar:
 
@@ -211,22 +214,22 @@
 
     .row.justify-content-center.align-items-center.mb-5(data-aos="fade-up")
       .col-12.col-md-4
-        p.m-0 OS <em>fingerprinting</em> se refiere a la detección del sistema operativo de un host final, mediante el análisis de paquetes, que se originan en ese sistema. Es utilizada por los profesionales de la seguridad y los piratas informáticos para trazar mapas de redes remotas y determinar qué vulnerabilidades podrían estar presentes para ser explotadas.
-        .tarjeta-color.bg_color7.p-2
+        p.mb-4 OS <em>fingerprinting</em> se refiere a la detección del sistema operativo de un host final, mediante el análisis de paquetes, que se originan en ese sistema. Es utilizada por los profesionales de la seguridad y los piratas informáticos para trazar mapas de redes remotas y determinar qué vulnerabilidades podrían estar presentes para ser explotadas.
+        .tarjeta-color.bg_color7.p-4.mb-4.mb-md-0
           p.m-0 OS <em>fingerprinting</em> funciona solo para paquetes que contienen una conexión TCP completa; es decir, la conexión TCP debe tener una conexión SYN, SYN/ACK y ACK
       .col-12.col-md-4
-        figure
+        figure.mb-4.mb-md-0
           img(src='@/assets/curso/tema2/img16.png')
       .col-12.col-md-4
-        .cajon.color-secundario.py-4.px-3
-          .h5.mb-4.mt-3 ¡Tenga presente!
-          p.m-0 Ciertos parámetros de la definición del protocolo TCP/IP se dejan a discreción de la aplicación del sistema operativo respectivo. Los diferentes sistemas operativos establecen diferentes valores, por defecto. Al recoger y examinar estos valores, se puede diferenciar entre varios sistemas operativos.
+        .cajon.color-secundario.py-4.px-3.alto_cajon_t2-3  
+          .h5.mb-4.mt-4 ¡Tenga presente!
+          p Ciertos parámetros de la definición del protocolo TCP/IP se dejan a discreción de la aplicación del sistema operativo respectivo. Los diferentes sistemas operativos establecen diferentes valores, por defecto. Al recoger y examinar estos valores, se puede diferenciar entre varios sistemas operativos.
 
     .bg_fondo2_t2
       p.m-0.mb-4.text-center Algunas de las áreas que pueden ser examinadas para determinar el sistema operativo son:
       .row.justify-content-center.align-items-center(data-aos="fade-right")          
         .col-12.col-md-7
-          .tarjeta-color.bg_color8.p-3
+          .tarjeta-color.bg_color8.p-3.mb-4.mb-md-0
             ul
               li 
                 i.fas.fa-check-circle
@@ -265,28 +268,28 @@
 
     p.m-0.mb-4 Un servidor <em>proxy</em> actúa como una puerta de enlace entre un usuario e internet. Es un servidor intermediario que separa a los usuarios finales de los sitios web que navegan. Los servidores <em>proxy</em> proporcionan diferentes niveles de funcionalidad, seguridad y privacidad, dependiendo de su caso de uso, necesidades o política de la empresa.
 
-    .row.justify-content-center.mb-4
+    .row.justify-content-center.mb-0.mb-md-4
       .col-12.col-md-10
         .cajon.color-acento-contenido.p-4.mb-5.mb-md-0(data-aos="fade-right")
           .row.justify-content-around.align-items-center
             .col-md-7
-              p.m-0 Si se utiliza un servidor <em>proxy</em>, el tráfico de internet fluye a través del servidor <em>proxy</em> en su camino hacia la dirección que se solicitó; la solicitud vuelve, entonces, a través de ese mismo servidor <em>proxy</em> (hay excepciones a esta regla) y luego el servidor <em>proxy</em> reenvía los datos recibidos del sitio web al usuario. 
+              p.m-0.mb-4.mb-md-0 Si se utiliza un servidor <em>proxy</em>, el tráfico de internet fluye a través del servidor <em>proxy</em> en su camino hacia la dirección que se solicitó; la solicitud vuelve, entonces, a través de ese mismo servidor <em>proxy</em> (hay excepciones a esta regla) y luego el servidor <em>proxy</em> reenvía los datos recibidos del sitio web al usuario. 
             .col-md-5
               figure
                 img(data-aos="fade-left")(src='@/assets/curso/tema2/img18.svg')
     
     .row.justify-content-center.align-items-stretch.mb-4
       .col-12.col-md-4
-        .tarjeta-color.bg_color5.p-3.height3
-          .h5.mb-4 ¡Atención!
-          p.m-0 Los servidores proxy modernos hacen mucho más que reenviar las solicitudes de la web, todo en nombre de la seguridad de los datos y el rendimiento de la red.
+        .tarjeta-color.bg_color5.p-4.h-100(data-aos="fade-right")
+          .h5.mb-4.mt-4 ¡Atención!
+          p Los servidores proxy modernos hacen mucho más que reenviar las solicitudes de la web, todo en nombre de la seguridad de los datos y el rendimiento de la red.
       .col-12.col-md-4
-        figure
+        figure.mb-4.mb-md-0.mt-4.mt-md-0
           img(src='@/assets/curso/tema2/img19.svg')
       .col-12.col-md-4
-        .tarjeta-color.bg_color3.p-3
-          .h5.mb-4 ¡Importante!
-          p.m-0 Actúan como un cortafuego y un filtro web, proporcionan conexiones de red compartidas y almacenan datos en caché para acelerar las solicitudes comunes. Un buen servidor proxy mantiene a los usuarios y a la red interna protegidos de las cosas malas que viven en la internet salvaje. Pueden proporcionar un alto nivel de privacidad.
+        .tarjeta-color.bg_color3.p-4.h-100(data-aos="fade-left")
+          .h5.mb-4.mt-4 ¡Importante!
+          p Actúan como un cortafuego y un filtro web, proporcionan conexiones de red compartidas y almacenan datos en caché para acelerar las solicitudes comunes. Un buen servidor proxy mantiene a los usuarios y a la red interna protegidos de las cosas malas que viven en la internet salvaje. Pueden proporcionar un alto nivel de privacidad.
 
     p.m-0 En el siguiente recurso se puede conocer, profundizar y asimilar las razones técnicas, por las cuales se hace útil y necesario el uso de un servidor <em>proxy</em>:
 
@@ -307,39 +310,37 @@
 
     p.m-0.mb-4 Estas son las particularidades de los tipos de anonimizadores:
     
-    .row.mb-5(data-aos="fade-right")
-      .col-md-6.col-lg.mb-5.mb-lg-0
-        .tarjeta.color-primario
-          .p-4
-            .row.justify-content-center
-              .col-md-4.mb-5
-                figure
-                  img.img.mx-auto.d-block.img100.mt-5(src='@/assets/curso/tema2/img21.svg')
-            .row.justify-content-center
-              .col-md-6
-                h4.text-center Anonimizador
+    .row.justify-content-center(data-aos="fade-down").mb-5
+      .col-lg-4.col-md-9.mb-3.mb-md-0
+        .row.px-2.pt-2(@mouseover="mostrarIndicador = true")
+          .col-12.m-0.nav-holder2.px-0
+            figure
+              .indicador--click(v-if="mostrarIndicador")
+              img(src="@/assets/curso/tema2/img21.svg")
+            .text.p-lg-4
+              .row.px-1.pt-1.mt-md-4.pt-md-0.mt-lg-3.mt-xl-4
+                .h3.mt-4.mt-lg-0.mb-3.text-center Anonimizador
+                p.px-4 Un anonimizador podría ser un servicio para esconder la identidad de alguna persona, una vez que la victimización asegura los servicios web. El anonimizador encripta la información del PC al proveedor de servicios de la red.
+      .col-lg-4.col-md-9.mb-3.mb-md-0
+        .row.px-2.pt-2
+          .col-12.m-0.nav-holder2.px-0
+            figure.shadow
+              img(src="@/assets/curso/tema2/img22.svg")
+            .text.p-lg-2.p-3
+              .row.px-1.pt-1.mt-md-4.pt-md-0.mt-lg-3.mt-xl-5
+                .h3.mt-4.mt-lg-0.mb-3.text-center Anonimizadores en red
+                p.px-2.px-md-5.text__sly1_t1 Transfieren primero sus datos a través de una red de computadoras conectadas a internet, antes de pasarlos al sitio web. Como resultado de que los datos pasan a través de muchas computadoras de la web, se convierte en algo muy engorroso para cualquiera que intente rastrear sus datos para determinar la asociación entre el usuario y también el anonimizador.
+      .col-lg-4.col-md-9.mb-3.mb-md-0
+        .row.px-2.pt-2
+          .col-12.m-0.nav-holder2.px-0
+            figure
+              img(src="@/assets/curso/tema2/img23.svg")
+            .text.p-lg-2.p-3
+              .row.px-1.pt-1.mt-md-4.pt-md-0.mt-lg-3.mt-xl-5
+                .h3.mt-4.mt-lg-0.mb-3.text-center Anonimizadores de un solo punto
+                p.px-2.px-md-5 Primero transfieren sus datos a través de un sitio web, antes de enviarlos al sitio web objetivo; así que le pasan los datos recogidos del sitio web objetivo al usuario a través del sitio web para proteger su identidad.
 
-      .col-md-6.col-lg.mb-5.mb-lg-0
-        .tarjeta.color-primario
-          .p-4
-            .row.justify-content-center
-              .col-md-4.mb-5
-                figure
-                  img.img.mx-auto.d-block.img100.mt-5(src='@/assets/curso/tema2/img22.svg')
-            .row.justify-content-center
-              .col-md-10
-                h4.text-center Anonimizadores en red
 
-      .col-md-6.col-lg.mb-5.mb-lg-0
-        .tarjeta.color-primario
-          .p-4
-            .row.justify-content-center
-              .col-md-4.mb-5
-                figure
-                  img.img.mx-auto.d-block.img100.mt-5(src='@/assets/curso/tema2/img23.svg')
-            .row.justify-content-center
-              .col-md-12
-                h4.text-center Anonimizadores de un solo punto
 
 
 </template>
@@ -348,6 +349,7 @@
 export default {
   name: 'Tema2',
   data: () => ({
+    mostrarIndicador: true,
     // variables de vue
   }),
   mounted() {

@@ -22,23 +22,24 @@
           figure
             img.d-none.d-lg-block(src='@/assets/curso/tema1/img02.png' data-aos="zoom-in-down") 
         .col-12.col-md-4
-          .tarjeta.bg_color3.p-3.mb-4.mb-md-0.height1(data-aos="fade-left")
-            .row
+          .tarjeta.bg_color3.p-4.mb-4.mb-md-0.height4.shadow(data-aos="fade-left")
+            .row.justify-content-center.align-items-center.ms-2
               .col-md-2
                 figure
-                  img.img400(src='@/assets/curso/tema1/img05.svg', alt='Texto que describa la imagen')
-              .col-md-10
-                h3.mt-2 Tenga presente
-              p.m-0.ms-2 La información que el hacker busca durante la fase de huella es cualquier elemento que dé pistas sobre la arquitectura de la red, el servidor y los tipos de aplicaciones donde se almacenan los datos valiosos.
+                  img.img400.mb-3.mb-md-0(src='@/assets/curso/tema1/img05.svg', alt='Texto que describa la imagen')
+              .col-md-10.margin__t1
+                h3 Tenga presente
+              p.mt-2 La información que el hacker busca durante la fase de huella es cualquier elemento que dé pistas sobre la arquitectura de la red, el servidor y los tipos de aplicaciones donde se almacenan los datos valiosos.
         .col-12.col-md-4
-          .tarjeta.bg_color3.p-3(data-aos="fade-left")
-            .row
+          .tarjeta.bg_color3.p-4.height4.shadow(data-aos="fade-left")
+            .row.justify-content-center.align-items-center.ms-1
               .col-md-2
                 figure
-                  img.img400(src='@/assets/curso/tema1/img05.svg', alt='Texto que describa la imagen')
-              .col-md-10
-                h3.mt-2 Importante
-              p.m-0 Antes de que se pueda lanzar un ataque o un exploit, lo que el hacker también busca es el sistema operativo y la versión, así como los tipos de aplicaciones deben ser descubiertos para que se pueda lanzar el ataque más efectivo contra el objetivo.
+                  img.img400.mb-3.mb-md-0(src='@/assets/curso/tema1/img05.svg', alt='Texto que describa la imagen')
+              .col-md-10.margin__t1
+                h3 ¡Importante!
+              .marginb__t1
+                p.mt-2 Antes de que se pueda lanzar un ataque o un exploit, lo que el hacker también busca es el sistema operativo y la versión, así como los tipos de aplicaciones deben ser descubiertos para que se pueda lanzar el ataque más efectivo contra el objetivo.
 
       p Estos son algunos de los datos que se deben reunir, sobre un objetivo, durante el <em>footprinting</em>:
 
@@ -111,12 +112,12 @@
           figure
             img(data-aos="fade-left")(src='@/assets/curso/tema1/img06.png')
       
-    .row.justify-content-center.mt-5
-      .col-12.col-md-12
-        .cajon.color-secundario.px-5.py-4.shadow(data-aos="fade-right")
-          p.m-0 El <em>footprinting</em> es el primer paso en el hacking ético e implica la recolección de información sobre el objetivo y su entorno. En esta etapa se puede recopilar información importante que luego es útil en las etapas posteriores del hacking ético. 
+      .row.justify-content-center.mt-5
+        .col-12.col-md-12
+          .cajon.color-secundario.px-5.py-4.shadow(data-aos="fade-right")
+            p.m-0 El <em>footprinting</em> es el primer paso en el hacking ético e implica la recolección de información sobre el objetivo y su entorno. En esta etapa se puede recopilar información importante que luego es útil en las etapas posteriores del hacking ético. 
 
-    p.mt-4 El <em>footprinting</em> se puede llevar a cabo de diferentes formas, entre las que se destacan:
+    p.mt-5.mb-5 El <em>footprinting</em> se puede llevar a cabo de diferentes formas, entre las que se destacan:
 
     .bg_fondosly1_t1
       .row.justify-content-center.mb-4
@@ -126,7 +127,7 @@
       .row.justify-content-center
         .col-12.col-md-10
           .tarjeta.p-4.mb-5.bg_slyder
-            SlyderA(tipo="b").color_bot_slyder1_t1
+            SlyderA(tipo="b").color_bot_slyder1_t1.sld_1_t1.mb-sld_1_t1
               .row.justify-content-center.align-items-center
                 .col-md-8.mb-4.mb-md-0
                   h4.mb-4.ms-4.ms-md-0 1. OSINT (Open Source INTelligence)
@@ -135,7 +136,7 @@
                   p.mb-4.ms-4.ms-md-0 El OSINT también incluye información que puede encontrarse en diferentes tipos de medios: en texto, en imágenes, vídeos, seminarios web, discursos públicos y conferencias.        
                 .col-md-3
                   figure
-                    img.img-fluid(src='@/assets/curso/tema1/img07.svg', alt='Texto que describa la imagen')
+                    img.img260(src='@/assets/curso/tema1/img07.svg')
 
               .row.justify-content-center.align-items-center
                 .col-md-8.mb-4.mb-md-0
@@ -155,7 +156,7 @@
                           | Ataques al objetivo u escaneos invasivos.
                 .col-md-3
                   figure
-                    img.img-fluid(src='@/assets/curso/tema1/img22.svg', alt='Texto que describa la imagen')
+                    img.img260(src='@/assets/curso/tema1/img22.svg', alt='AvatarTop')
 
               .row.justify-content-center.align-items-center
                 .col-md-8.mb-4.mb-md-0
@@ -164,7 +165,7 @@
                   p.mb-4.ms-4.ms-md-0 Este recopila información de forma anónima para que los resultados no puedan ser rastreados.       
                 .col-md-3
                   figure
-                    img.img-fluid(src='@/assets/curso/tema1/img23.svg', alt='Texto que describa la imagen')
+                    img.img210(src='@/assets/curso/tema1/img23.svg', alt='AvatarTop')
 
               .row.justify-content-center.align-items-center
                 .col-md-8.mb-4.mb-md-0
@@ -172,7 +173,7 @@
                   p.mb-4.ms-4.ms-md-0 Recopila información que pudiera ser publicada con nombre diferente para mantener la privacidad que se encuentre publicada en internet pero no directamente vinculada al nombre del autor; este puede usar un seudónimo.      
                 .col-md-3
                   figure
-                    img.img-fluid(src='@/assets/curso/tema1/img24.svg', alt='Texto que describa la imagen')
+                    img.img210(src='@/assets/curso/tema1/img24.svg')
   
               .row.justify-content-center.align-items-center
                 .col-md-8.mb-4.mb-md-0
@@ -208,7 +209,7 @@
                               |  Información filtrada.
                 .col-md-4
                   figure
-                    img.img-fluid(src='@/assets/curso/tema1/img25.svg', alt='Texto que describa la imagen')
+                    img.img260(src='@/assets/curso/tema1/img25.svg', alt='Texto que describa la imagen')
   
               .row.justify-content-center
                 .col-md-10.mb-4.mb-md-0
@@ -266,7 +267,7 @@
                           td.text-center Recopilar información del sistema
                           td.text-center  Recopilar información de la organización
                         tr
-                      tbody
+                      tbody.text__sly1_t1
                         tr.bg_color8
                           td
                             ul.lista-ul.ms-0.ms-md-5
@@ -322,13 +323,13 @@
       h2 1.2	Herramientas y Google Hacking
 
     .row.justify-content-center.align-items-center.mb-5.mt-4           
-      .col-lg-12 
+      .col-lg-12
         .bloque-texto-g.color-primario.p-3.p-sm-4.p-md-5(data-aos="fade-down")
           .bloque-texto-g__img(
             :style="{'background-image': `url(${require('@/assets/curso/tema1/img08.png')})`}"
           )
-          .bloque-texto-g__texto.p-4
-            p.m-0 Dentro del hacking ético, existen diferentes herramientas para poder realizar un reconocimiento de huellas o <em>footprinting</em>. Este proceso busca información pública o privada que pueda ser objeto de un ataque.
+          .bloque-texto-g__texto.p-4.margin__centerbloqt1
+            p Dentro del hacking ético, existen diferentes herramientas para poder realizar un reconocimiento de huellas o <em>footprinting</em>. Este proceso busca información pública o privada que pueda ser objeto de un ataque.
               br
 
     p.m-o.text-center Para ello, se pueden realizar diferentes actividades, como las que se describen a continuación:
@@ -336,7 +337,7 @@
     .row.justify-content-center
         .col-12.col-md-12
           .tarjeta-color.p-5.mb-5.bg_color6
-            SlyderA(tipo="b").color_bot_slyder2_t1
+            SlyderA(tipo="b").color_bot_slyder2_t1.sld_2_t2
               .row.justify-content-around
                 .col-md-5(data-aos="fade-right")
                   h5.mb-4 Herramientas de creación mirroring sitio web
@@ -373,132 +374,132 @@
                   figure
                     img(src='@/assets/curso/tema1/img13.png', alt='Texto que describa la imagen')
       
-    .row.justify-content-center
-      .col-12.col-lg-10
-        .tarjeta.bgr2.mb-5.mb-md-0(data-aos="fade-up")
-          .row.justify-content-center.align-items-center
-            .col-8.col-sm-6.col-md-5.mb-4.mb-md-0
-              img(src="@/assets/curso/tema1/img14.png")
+    .bg_imgfondo3_t1
+      .row.justify-content-center
+        .col-12.col-lg-10
+          .tarjeta.bgr2.mb-5.mb-md-0(data-aos="fade-up")
+            .row.justify-content-center.align-items-center
+              .col-8.col-sm-6.col-md-5.mb-4.mb-md-0
+                img(src="@/assets/curso/tema1/img14.png")
 
-            .col-md-6.col-lg-6
-              h4.mb-4.ms-4.ms-md-0 Algunas herramientas para el footpringting
-              p.mb-4.text.small.ms-4.ms-md-0 Conozca, sucintamente, algunas herramientas, con sus particularidades, a través de las cuales es posible hacer reconocimiento de huellas o <em>footprinting</em>. Explore el Anexo_1_HerramientasYGoogleHacking.
-              
-              a.boton.bgr1.margin2(:href="obtenerLink('/downloads/OKEst_Anexo_1_HerramientasYGoogleHacking.docx')" target="_blank" type="application/pdf")
-                span Descargar
-                i.fas.fa-file-download
-              img.posit.img116(src="@/assets/curso/tema1/img15.png")   
-    
-    Separador
+              .col-md-6.col-lg-6
+                h4.mb-4.ms-4.ms-md-0 Algunas herramientas para el footpringting
+                p.mb-4.text.small.ms-4.ms-md-0 Conozca, sucintamente, algunas herramientas, con sus particularidades, a través de las cuales es posible hacer reconocimiento de huellas o <em>footprinting</em>. Explore el Anexo_1_HerramientasYGoogleHacking.
+                
+                a.boton.bgr1.margin2(:href="obtenerLink('/downloads/OKEst_Anexo_1_HerramientasYGoogleHacking.docx')" target="_blank" type="application/pdf")
+                  span Descargar
+                  i.fas.fa-file-download
+                img.posit.img116(src="@/assets/curso/tema1/img15.png")   
+      
+      Separador
 
-    #t_1_3.titulo-segundo.color-acento-contenido(data-aos="zoom-out-right")
-      h2 1.3 Contramedidas
+      #t_1_3.titulo-segundo.color-acento-contenido(data-aos="zoom-out-right")
+        h2 1.3 Contramedidas
 
-    p.m-0.mb-4(data-aos="fade-right") Dentro del <em>footprinting</em> o huellas, se debe tener en cuenta que las contramedidas que se pueden realizar son múltiples, dependiendo del trato que se les pueda dar, según el caso que se presente.
+      p.m-0.mb-4(data-aos="fade-right") Dentro del <em>footprinting</em> o huellas, se debe tener en cuenta que las contramedidas que se pueden realizar son múltiples, dependiendo del trato que se les pueda dar, según el caso que se presente.
 
-    .row.justify-content-center.align-items-center(data-aos="fade-right")
-      .col-12.col-md-6
-        p.mb-4 Para una mejor comprensión del proceso de mitigación de ellas, se presentan a continuación algunas consideraciones importantes:
-        ul.lista--cs
-          li 
-            i.fas.fa-check-circle
-            |  Configurar routers para restringir las respuestas a la solicitud de <em>footprinting</em>.
-          li 
-            i.fas.fa-check-circle
-            |	Configurar servidores de internet para evitar la fuga de información y desactivar los protocolos no deseados.
-          li 
-            i.fas.fa-check-circle
-            |	Bloquear los puertos con la configuración adecuada del firewall.            
-          li 
-            i.fas.fa-check-circle
-            |	Utilizar un IDS que se pueda configurar para rechazar el tráfico sospechoso y recoger los patrones de <em>footprinting</em>.
-          li 
-            i.fas.fa-check-circle  
-            |	Evaluar la información antes de publicarla en el sitio web / internet.
-          li 
-            i.fas.fa-check-circle
-            |	Realizar técnicas de <em>footprinting</em> y eliminar cualquier información sensible encontrada.
-          li 
-            i.fas.fa-check-circle
-            |	Evitar que los motores de búsqueda almacenen caché de una página web y el uso de registro de servicios anónimos.
-          li 
-            i.fas.fa-check-circle
-            |	Desactivar la lista de directorios y utilizar Split DNS.
-      .col-12.col-md-6(data-aos="fade-left")
-        figure
-          img(src='@/assets/curso/tema1/img16.png', alt='Texto que describa la imagen')
+      .row.justify-content-center.align-items-center(data-aos="fade-right")
+        .col-12.col-md-6
+          p.mb-4 Para una mejor comprensión del proceso de mitigación de ellas, se presentan a continuación algunas consideraciones importantes:
+          ul.lista--cs
+            li 
+              i.fas.fa-check-circle
+              |  Configurar routers para restringir las respuestas a la solicitud de <em>footprinting</em>.
+            li 
+              i.fas.fa-check-circle
+              |	Configurar servidores de internet para evitar la fuga de información y desactivar los protocolos no deseados.
+            li 
+              i.fas.fa-check-circle
+              |	Bloquear los puertos con la configuración adecuada del firewall.            
+            li 
+              i.fas.fa-check-circle
+              |	Utilizar un IDS que se pueda configurar para rechazar el tráfico sospechoso y recoger los patrones de <em>footprinting</em>.
+            li 
+              i.fas.fa-check-circle  
+              |	Evaluar la información antes de publicarla en el sitio web / internet.
+            li 
+              i.fas.fa-check-circle
+              |	Realizar técnicas de <em>footprinting</em> y eliminar cualquier información sensible encontrada.
+            li 
+              i.fas.fa-check-circle
+              |	Evitar que los motores de búsqueda almacenen caché de una página web y el uso de registro de servicios anónimos.
+            li 
+              i.fas.fa-check-circle
+              |	Desactivar la lista de directorios y utilizar Split DNS.
+        .col-12.col-md-6(data-aos="fade-left")
+          figure
+            img(src='@/assets/curso/tema1/img16.png', alt='Texto que describa la imagen')
 
-    .row.justify-content-center.align-items-center.mb-5.mt-4           
-      .col-lg-12 
-        .bloque-texto-g.color-primario.p-3.p-sm-4.p-md-5(data-aos="flip-down")
-          .bloque-texto-g__img(
-            :style="{'background-image': `url(${require('@/assets/curso/tema1/img17.png')})`}"
-          )
-          .bloque-texto-g__texto.p-4
-            p <b>Pentesting de <em>footprinting</em></b>
-            br
-            br
-            p El pentest de <em>footprinting</em> se utiliza para determinar la información de la organización, a disposición del público en Internet: arquitectura de red, sistemas operativos, aplicaciones y usuarios. El pentester intenta reunir la mayor cantidad de información posible acerca de la organización destino en internet y otras fuentes accesibles al público.
-              br  
-    
-    p.m-0.text-center.mb-4(data-aos="fade") El <em>footprinting</em> es el primer paso por realizar dentro de la prueba de penetración; se deben tener presentes los siguientes aspectos:
+      .row.justify-content-center.align-items-center.mb-5.mt-4.height__bloque-text2_t1.height__bloque-white_t1           
+        .col-lg-12 
+          .bloque-texto-g.color-primario.p-3.p-sm-4.p-md-5(data-aos="flip-down")
+            .bloque-texto-g__img(
+              :style="{'background-image': `url(${require('@/assets/curso/tema1/img17.png')})`}"
+            )
+            .bloque-texto-g__texto.p-4
+              p <b>Pentesting de <em>footprinting</em></b>
+              br
+              br
+              p El pentest de <em>footprinting</em> se utiliza para determinar la información de la organización, a disposición del público en Internet: arquitectura de red, sistemas operativos, aplicaciones y usuarios. El pentester intenta reunir la mayor cantidad de información posible acerca de la organización destino en internet y otras fuentes accesibles al público.
+                br  
+      
+      p.m-0.text-center.mb-4(data-aos="fade") El <em>footprinting</em> es el primer paso por realizar dentro de la prueba de penetración; se deben tener presentes los siguientes aspectos:
 
-    .row.mb-5.justify-content-center
-      .col-lg-8
-        .row.justify-content-center
-          .col-md-5.col-xl.mb-4.mb-xl-0
-            .tarjeta-numerada.text-center.tarjeta_t5.p-4.indicador__container(@click="modal1 = true")
-              img.mb-4(src='@/assets/curso/tema1/img18.svg')
-              h4 El fingerprinting 
-              .tarjeta-numerada__contenido
-                p.mb-0 Ayuda a determinar los datos de una organización en internet, como la arquitectura de la red, los sistemas operativos, las aplicaciones y los usuarios. El pentester trata de reunir los datos sensibles ofrecidos por el aliado público del objetivo, fingiendo ser un atacante. El objetivo es también un anfitrión seleccionado o una red. 
-                .indicador--click(v-if="mostrarIndicador")
+      .row.mb-5.justify-content-center
+        .col-lg-8
+          .row.justify-content-center
+            .col-md-5.col-xl.mb-4.mb-xl-0
+              .tarjeta-numerada.text-center.tarjeta_t5.p-4.shadow(data-aos="fade-right")
+                .indicador--hover(v-if="mostrarIndicador")
+                img.img100.mb-4(src='@/assets/curso/tema1/img18.svg')
+                h4 El fingerprinting 
+                .tarjeta-numerada__contenido
+                  p.mb-0 Ayuda a determinar los datos de una organización en internet, como la arquitectura de la red, los sistemas operativos, las aplicaciones y los usuarios. El pentester trata de reunir los datos sensibles ofrecidos por el aliado público del objetivo, fingiendo ser un atacante. El objetivo es también un anfitrión seleccionado o una red. 
 
-          .col-md-5.col-xl.mb-4.mb-xl-0
-            .tarjeta-numerada.text-center.tarjeta_t5.p-4(@mouseover="mostrarIndicador = false").camb_color
-              .indicador--hover(v-if="mostrarIndicador")
-              img.mb-4(src='@/assets/curso/tema1/img05.svg')
-              h4 La actividad del <em>footprinting</em>
-              .tarjeta-numerada__contenido
-                p.mb-0 Le permite a un pentester encontrar las posibles vulnerabilidades de seguridad que un atacante podría explotar. Dentro del marco del pentesting, el pentester actúa como un forastero malicioso y simula un ataque para buscar lagunas soluciones de seguridad.
+            .col-md-5.col-xl.mb-4.mb-xl-0
+              .tarjeta-numerada.text-center.tarjeta_t5.p-4.shadow.camb_color(data-aos="fade-left")
+                img.img100.mb-4(src='@/assets/curso/tema1/img05.svg')
+                h4 La actividad del <em>footprinting</em>
+                .tarjeta-numerada__contenido
+                  p.mb-0 Le permite a un pentester encontrar las posibles vulnerabilidades de seguridad que un atacante podría explotar. Dentro del marco del pentesting, el pentester actúa como un forastero malicioso y simula un ataque para buscar lagunas soluciones de seguridad.
 
-    p.m-0.mb-5.text-center Los doce pasos principales a seguir en la prueba de penetración de <em>footprinting</em> son:
+      p.m-0.mb-5.text-center Los doce pasos principales a seguir en la prueba de penetración de <em>footprinting</em> son:
 
-    
-    .row.mb-5
-      .col-md-7.mb-5.mb-md-0(data-aos="fade-right")
-        LineaTiempoD.color-secundario
-          p(numero="1" titulo="Obtener la autorización correcta") Realice siempre las pruebas de penetración con autorización, el primer paso en una prueba de penetración es inducir la correcta autorización de la organización. Esto puede o no incluir a los directores del sistema.
-          
-          p(numero="2" titulo="Definir el alcance de la evaluación") La definición del alcance de la evaluación de la seguridad podría ser un requisito para el proceso de prueba de la pluma, el alcance de la evaluación determina la gama de sistemas dentro de la red para comprobar, por lo tanto, los recursos que pueden utilizarse para probar también determinan las limitaciones del pentester. 
-          
-          p(numero="3" titulo="Realizar el <em>footprinting</em> a través de los motores de búsqueda") Usar los motores de búsqueda de huellas como Google, Yahoo! Search, Ask, Bing, y Dog pile para reunir los datos de la organización objetivo como los detalles de los empleados, las páginas de acceso y los portales de intranet, entre otros, eso puede ayudar en la actividad de ingeniería social y variedades alternativas de ataques a sistemas avanzados.
-          
-          p(numero="4" titulo="Realizar el <em>footprinting</em> a través de servicios web") Realizar el <em>footprinting</em> a través de servicios web como Net craft, Pip, Google Finance y Google Alerts para reunir datos relativos al sitio web de la organización objetivo, los empleados, el competidor, la infraestructura y los sistemas operativos.
+      
+      .row.mb-5
+        .col-md-7.mb-5.mb-md-0(data-aos="fade-right")
+          LineaTiempoD.color-secundario
+            p(numero="1" titulo="Obtener la autorización correcta") Realice siempre las pruebas de penetración con autorización, el primer paso en una prueba de penetración es inducir la correcta autorización de la organización. Esto puede o no incluir a los directores del sistema.
+            
+            p(numero="2" titulo="Definir el alcance de la evaluación") La definición del alcance de la evaluación de la seguridad podría ser un requisito para el proceso de prueba de la pluma, el alcance de la evaluación determina la gama de sistemas dentro de la red para comprobar, por lo tanto, los recursos que pueden utilizarse para probar también determinan las limitaciones del pentester. 
+            
+            p(numero="3" titulo="Realizar el <em>footprinting</em> a través de los motores de búsqueda") Usar los motores de búsqueda de huellas como Google, Yahoo! Search, Ask, Bing, y Dog pile para reunir los datos de la organización objetivo como los detalles de los empleados, las páginas de acceso y los portales de intranet, entre otros, eso puede ayudar en la actividad de ingeniería social y variedades alternativas de ataques a sistemas avanzados.
+            
+            p(numero="4" titulo="Realizar el <em>footprinting</em> a través de servicios web") Realizar el <em>footprinting</em> a través de servicios web como Net craft, Pip, Google Finance y Google Alerts para reunir datos relativos al sitio web de la organización objetivo, los empleados, el competidor, la infraestructura y los sistemas operativos.
 
-          p(numero="5" titulo="Realizar el <em>footprinting</em> a través de sitios de redes sociales") Realizar la impresión del pie para recoger los objetivos del órgano objetivo del empleado de la nación de la impresión del pie, datos de perfiles personales en sitios de redes sociales como Facebook, rvlySpace, LinkedIn, Twitter, Interest, Google+, etc. Esto puede ayudar en la actividad de ingeniería social, además, usarás los motores de búsqueda de personas para obtener datos de algunas personas objetivo.
+            p(numero="5" titulo="Realizar el <em>footprinting</em> a través de sitios de redes sociales") Realizar la impresión del pie para recoger los objetivos del órgano objetivo del empleado de la nación de la impresión del pie, datos de perfiles personales en sitios de redes sociales como Facebook, rvlySpace, LinkedIn, Twitter, Interest, Google+, etc. Esto puede ayudar en la actividad de ingeniería social, además, usarás los motores de búsqueda de personas para obtener datos de algunas personas objetivo.
 
-          p(numero="6" titulo="Realizar el <em>footprinting</em> del sitio web") Realizar el <em>footprinting</em> de un sitio web usando herramientas como Burp Suite, web information Extractor, Track web site duplicator, Metabolite. Website-Watcher para crear un mapa detallado de la estructura y diseño del sitio web.
-      .col-md-5.mb-5.mb-md-0
-        figure
-          img(data-aos="fade-left")(src='@/assets/curso/tema1/img19.png')
-    .row.mb-5
-      .col-md-5.mb-5.mb-md-0
-        figure
-          img(data-aos="fade-right")(src='@/assets/curso/tema1/img20.png')
-      .col-md-7.mb-5.mb-md-0
-        LineaTiempoD.color-secundario(data-aos="fade-left")        
-          p(numero="7" titulo="Realizar la huella del correo electrónico") Hacer el <em>footprinting</em> del correo electrónico utilizando herramientas como Yes ware, y Contractility para reunir datos sobre la ubicación física de un individuo. Usar esto para realizar ingeniería social la que, a su vez, podría ayudar en el mapeo de la red de la organización objetivo. Analizar los encabezados de los correos electrónicos ayudará a reunir datos como la dirección IP del remitente, el servidor de correo del remitente, la dirección del remitente, la información y la hora de recepción de los bytes de los servidores de correo electrónico del remitente, el sistema de autenticación utilizado por el servidor de correo del remitente, el nombre completo del remitente, etc.
+            p(numero="6" titulo="Realizar el <em>footprinting</em> del sitio web") Realizar el <em>footprinting</em> de un sitio web usando herramientas como Burp Suite, web information Extractor, Track web site duplicator, Metabolite. Website-Watcher para crear un mapa detallado de la estructura y diseño del sitio web.
+        .col-md-5.mb-5.mb-md-0
+          figure
+            img(data-aos="fade-left")(src='@/assets/curso/tema1/img19.png')
+      .row.mb-5
+        .col-md-5.mb-5.mb-md-0
+          figure
+            img(data-aos="fade-right")(src='@/assets/curso/tema1/img20.png')
+        .col-md-7.mb-5.mb-md-0
+          LineaTiempoD.color-secundario(data-aos="fade-left")        
+            p(numero="7" titulo="Realizar la huella del correo electrónico") Hacer el <em>footprinting</em> del correo electrónico utilizando herramientas como Yes ware, y Contractility para reunir datos sobre la ubicación física de un individuo. Usar esto para realizar ingeniería social la que, a su vez, podría ayudar en el mapeo de la red de la organización objetivo. Analizar los encabezados de los correos electrónicos ayudará a reunir datos como la dirección IP del remitente, el servidor de correo del remitente, la dirección del remitente, la información y la hora de recepción de los bytes de los servidores de correo electrónico del remitente, el sistema de autenticación utilizado por el servidor de correo del remitente, el nombre completo del remitente, etc.
 
-          p(numero="8" titulo="Recopilar la inteligencia competitiva") Reunir inteligencia competitiva usando herramientas como Hoover's, LexisNexis, o Business Wire. Estas herramientas extraen datos de la competencia como su fecha de establecimiento, ubicación, análisis de progreso, autoridades superiores, análisis de productos, detalles de marketing, etc.
-          
-          p(numero="9" titulo="Realizar el <em>footprinting</em> de WHOIS") Realizar el <em>footprinting</em> utilizando herramientas como WHOIS es la búsqueda del convertidor de IP por lotes para extraer los datos relativos a los dominios explícitos, se capturan datos como la dirección IP, el nombre del propietario del dominio, el nombre del registrante y los detalles de contacto, incluyendo números de teléfono e identificaciones de correo electrónico; el conocimiento se utilizará para crear un mapa detallado de la red de la organización y reunir datos personales.
+            p(numero="8" titulo="Recopilar la inteligencia competitiva") Reunir inteligencia competitiva usando herramientas como Hoover's, LexisNexis, o Business Wire. Estas herramientas extraen datos de la competencia como su fecha de establecimiento, ubicación, análisis de progreso, autoridades superiores, análisis de productos, detalles de marketing, etc.
+            
+            p(numero="9" titulo="Realizar el <em>footprinting</em> de WHOIS") Realizar el <em>footprinting</em> utilizando herramientas como WHOIS es la búsqueda del convertidor de IP por lotes para extraer los datos relativos a los dominios explícitos, se capturan datos como la dirección IP, el nombre del propietario del dominio, el nombre del registrante y los detalles de contacto, incluyendo números de teléfono e identificaciones de correo electrónico; el conocimiento se utilizará para crear un mapa detallado de la red de la organización y reunir datos personales.
 
-          p(numero="10" titulo="Realizar el <em>footprinting</em> del DNS") Usando herramientas como DNs, DIG y DNS para trabajar, anfitriones clave dentro de la red y para realizar ataques de ingeniería social, resolver el nombre de dominio para averiguar sobre su dirección IP, registros DNS, etc.
+            p(numero="10" titulo="Realizar el <em>footprinting</em> del DNS") Usando herramientas como DNs, DIG y DNS para trabajar, anfitriones clave dentro de la red y para realizar ataques de ingeniería social, resolver el nombre de dominio para averiguar sobre su dirección IP, registros DNS, etc.
 
-          p(numero="11" titulo="Realizar el <em>footprinting</em>") Aquí se usan herramientas como Path analyzer pro, Visual Route, y GEO Spider. La red varía y los datos alternativos con respecto a la red del objetivo ayudan a dibujar el diagrama de la red del objetivo.
+            p(numero="11" titulo="Realizar el <em>footprinting</em>") Aquí se usan herramientas como Path analyzer pro, Visual Route, y GEO Spider. La red varía y los datos alternativos con respecto a la red del objetivo ayudan a dibujar el diagrama de la red del objetivo.
 
-          p(numero="12" titulo="Realizar ingeniería social") Aplicar técnicas de ingeniería social como Eavesdropping, Shoulder surfing, Dumpster diving, la suplantación de identidad en sitios de redes sociales y el phishing para reunir datos esenciales sobre la organización objetivo, a través de la ingeniería social, se reunirá los elementos de seguridad de la organización objetivo en uso, las versiones del sistema operativo y el software, los datos de la disposición de la red, las direcciones IP, así como los nombres de los servidores y el personal vital.
+            p(numero="12" titulo="Realizar ingeniería social") Aplicar técnicas de ingeniería social como Eavesdropping, Shoulder surfing, Dumpster diving, la suplantación de identidad en sitios de redes sociales y el phishing para reunir datos esenciales sobre la organización objetivo, a través de la ingeniería social, se reunirá los elementos de seguridad de la organización objetivo en uso, las versiones del sistema operativo y el software, los datos de la disposición de la red, las direcciones IP, así como los nombres de los servidores y el personal vital.
 
 
 
@@ -509,6 +510,7 @@ export default {
   name: 'Tema1',
   components: {},
   data: () => ({
+    mostrarIndicador: true,
     // variables de vue
   }),
   mounted() {

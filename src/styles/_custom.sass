@@ -9,6 +9,24 @@
 .img110
   max-width: 110px
 
+.img135
+  max-width: 135px
+  @media screen and ( max-width: 420px )
+    max-width: 150px
+    margin-left: 70px
+
+.img210
+  max-width: 210px
+  @media screen and ( max-width: 420px )
+    max-width: 150px
+    margin-left: 65px
+
+.img260
+  max-width: 260px
+  @media screen and ( max-width: 420px )
+    max-width: 170px
+    margin-left: 50px
+
 .img395
   max-width: 395px
 
@@ -39,7 +57,7 @@
   background-color: #F6F6F6
 
 .bg_color6
-  background-color: #F2EBFF
+  background-color: #DFD4E9
   border-radius: 15px
 
 .bg_color7
@@ -64,16 +82,16 @@
     position: absolute
     margin: 0 0rem
     top: -3rem
-    left: -46px
+    left: -48px
     width: calc( 100% + 6rem)
-    height: 100%
+    height: 65%
     background-image: url("../assets/curso/introduccion/img01.svg")
     background-repeat: no-repeat
-    background-size: 100% auto  
+    background-size: cover
 
 .bg_fondosly1_t1
   position: relative
-  .row, .row
+  p, .row, .row
     position: relative
   &::before
     content: ''
@@ -93,16 +111,9 @@
   width: 32%
   right: 28px
 
-.banfondo1
-  background-image: url('../assets/curso/tema1/imgfondo1.svg')
-  background-position: 100% 100%
-  background-size: contain
-  background-repeat: no-repeat
-  margin-inline: -3.4rem
-
 .bg_imgfondo1_t1
   position: relative
-  .row, .row, p, .row, separador, titulo, .row, cajon 
+  .row, .row, p, .row, separador, titulo, .row, cajon, p 
     position: relative
   &::before
     content: ''
@@ -115,7 +126,7 @@
     background-image: url("../assets/curso/tema1/imgfondo1.svg")
     background-repeat: no-repeat
     background-size: 100% auto  
-    
+
 .bg_slyder
   background-image: url("../assets/curso/tema1/imgsly1.svg")
   background-size: cover
@@ -132,24 +143,6 @@
 .grandor_img
   width: auto
   height: auto    
-
-.bg_grad-01
-  position: relative
-  .row
-    position: relative
-  &::before
-    content: ''
-    position: absolute
-    margin: 0 0rem
-    top: 4rem
-    left: 0
-    width: calc( 100% + 6rem)
-    height: 100%
-    background-image: url("../assets/curso/tema1/imgfondo1.svg")
-    background-repeat: no-repeat
-    background-size: 100% auto  
-    //@media screen and ( max-width: 400px )
-      //background-size: cover
 
 .posit_relative2
   position: relative
@@ -205,6 +198,9 @@
 
 .margintop_2
   margin-top: 13%
+
+.alto_cajon_t2-3  
+  height: 345px
 
 .cajon.color-secundario 
     background-color: #F6F6F6
@@ -266,7 +262,10 @@
   .slyder-a__bullets__item--active 
       background-color: #8F52F5
       border-color: #8F52F5
- 
+
+.slyder-a__bullets__item 
+  border: none
+
 .bgr2
   background-color: #E8E8E8
   height: 305px
@@ -307,9 +306,10 @@
 .height2    
   height: 268px
 
-.height3
-  height: 286px!important
-
+.height4
+  height: 241px
+  @media screen and ( max-width: 420px )
+    height: 390px
 
 .bg-colorx
   color: #12263F
@@ -368,6 +368,7 @@
 
 .tabs-a.color-acento-botones .tabs-a__tab__selected 
     background-color: #5C379B!important
+    color: #fff!important
 .tabs-a.color-acento-botones .tabs-a__tab__selected:before 
     background-color: #5C379B
 
@@ -423,6 +424,22 @@
     background-repeat: no-repeat
     background-size: cover
 
+.bg_fondo5_t2
+  position: relative
+  .row
+    position: relative
+  &::before
+    content: ''
+    position: absolute
+    margin: 0 0rem
+    top: -1rem
+    left: -1px
+    width: 100%
+    height: 117%
+    background-image: url("../assets/curso/tema2/imgfondo4.svg")
+    background-repeat: no-repeat
+    background-size: cover
+
 .tarjeta.color-primario 
     background-color: #E7DEFC
     height: 312px
@@ -431,10 +448,43 @@
     color: #12263F
 
 .bloque-texto-g__texto 
-    width: 65%
+    width: 65.5%
+    height: 233px
     @media screen and ( max-width: 420px )
       width: 90%
       margin-right: 14px
+
+.height__bloque-white_t1
+    .bloque-texto-g__texto 
+      width: 65.5%
+      height: 233px
+      @media screen and ( max-width: 420px )
+        width: 90%
+        margin-right: 14px 
+        height: auto 
+
+.height__bloque-white_t3
+    .bloque-texto-g__texto 
+      width: 65.5%
+      height: 233px
+      @media screen and ( max-width: 420px )
+        width: 90%
+        margin-right: 14px 
+        height: fit-content
+        
+.margin__centerbloqt1
+  p
+    position: absolute
+    left: 8%
+    top: 50%
+    transform: translatex(-4%) translatey(-50%)
+
+.margin__centerbloqt3
+  p
+    position: absolute
+    left: 3%
+    top: 19%
+    transform: translatex(-4%) translatey(-50%)
 
 .bg_fondo1_t3
   position: relative
@@ -452,6 +502,22 @@
     background-repeat: no-repeat
     background-size: cover
 
+.bg_fondo2_t3
+  position: relative
+  p, .row
+    position: relative
+  &::before
+    content: ''
+    position: absolute
+    margin: 0 0rem
+    top: -1rem
+    left: -48px
+    width: calc( 100% + 6rem)
+    height: 100%
+    background-image: url("../assets/curso/tema3/imgfondo2_t3.svg")
+    background-repeat: no-repeat
+    background-size: cover
+
 .margin_left1
     margin-left: 90px!important
 
@@ -465,7 +531,7 @@
     color: #707070
 
 .img-fluid
-  max-width: 100%
+  width: 100%
   height: auto
 
 
@@ -505,12 +571,12 @@
 .tarjeta-numerada:hover .tarjeta-numerada__numero
   left: 50%
   top: -6%  
-  background-color: #BFFCF8  
 .tarjeta-numerada:hover .tarjeta-numerada__contenido
   display: inherit 
 .tarjeta-numerada 
-    border: 0
-    
+  border: 0
+.tarjeta-numerada:hover
+  background-color: #BFFCF8 
 
 .tarjeta--boton
   margin-left: 0px
@@ -543,6 +609,11 @@
   .indicador--hover:after
     left: 5px
 
+.indicador--hover, .indicador--click 
+    position: relative
+    top: 175px
+    left: 192px
+
 // Tarjeta hower T2    
 .nav-holder2
   display: inline-block
@@ -565,12 +636,12 @@
   position: absolute
   top: 0
   bottom: 0
-  left: 0
-  right: 0
+  left: 6px
+  right: 6px
   content: ''
-  background-color: #E7DEFC
-  border-radius: 10px
-  opacity: 1
+  background-color: #BBFFFB
+  border-radius: 30px
+  opacity: -30
   z-index: 888
   -webkit-transition: all 0.45s ease
   -moz-transition: all 0.45s ease
@@ -588,28 +659,23 @@
   -webkit-transition-delay: 0.1s
   -moz-transition-delay: 0.1s
   transition-delay: 0.1s
-  border-top-left-radius: 14px
-  border-top-right-radius: 14px
+  border-top-left-radius: 30px
+  border-top-right-radius: 30px
 
 .nav-holder2
   .text
     position: absolute
-    top: 75%
-    bottom: 0px
-    left: 0px
-    right: 0px
+    top: 52% 
     z-index: 999
-    bottom: 0
-    padding: 1em
   img
     backface-visibility: hidden
     max-width: 100%
-    vertical-align: top
+    
     z-index: 0
   p
     margin: 0
     opacity: 0
-    line-height: 1.2em
+    line-height: 1.4em
 
 .nav-holder2 .h4
   margin: 0
@@ -618,6 +684,90 @@
 .nav-holder2:hover
   .text
     top: -3%
-  h4, p
+  h3, p
     opacity: 1
 
+.margin__t1
+  h3
+    margin: 0 0 0
+
+.marginb__t1
+  p
+    margin-bottom: 0
+   
+.bg_imgfondo3_t1
+  position: relative
+  .row, separador, titulo, p, .row, p, .row 
+    position: relative
+  &::before
+    content: ''
+    position: absolute
+    margin: 0 0rem
+    top: 3rem
+    left: -49px
+    width: calc( 100% + 6rem)
+    height: 87%
+    background-image: url("../assets/curso/tema1/imgfondo4.svg")
+    background-repeat: no-repeat
+    background-size: 100% auto  
+
+.height__bloque-text2_t1
+  .bloque-texto-g.color-primario
+      height: 330px
+      @media screen and (max-width: 420px) 
+          height: 640px
+
+.tarjeta.color-acento-botones--borde 
+    background-color: #E7DEFC
+
+.sld_1_t1
+  @media screen and (max-width: 420px) 
+    .slyder-a__bullets 
+      width: 80%
+    .slyder-a__btn--atrs
+      width: 50%
+      height: 40px
+      margin-left: 1px
+    .slyder-a__btn--sigt
+      width: 50%
+      height: 40px
+      margin-right: -18px
+
+.sld_2_t2
+  @media screen and (max-width: 420px) 
+    .slyder-a__bullets 
+      width: 90%
+    .slyder-a__btn--atrs
+      width: 100px
+      height: 50px
+      margin-right: -3px
+      margin-left: -30px
+    .slyder-a__btn--sigt
+      width: 100px
+      height: 50px
+      margin-left: -3px
+      margin-right: -26px
+
+.sld_2_t3
+  @media screen and (max-width: 420px) 
+    .slyder-a__bullets 
+      width: 90%
+    .slyder-a__btn--atrs
+      width: 100px
+      height: 41px
+      margin-right: -3px
+      margin-left: -30px
+    .slyder-a__btn--sigt
+      width: 100px
+      height: 41px
+      margin-left: -3px
+      margin-right: -26px
+
+.mb-sld_1_t1
+  @media screen and (max-width: 420px) 
+    .slyder-a__tipo-b 
+      margin-bottom: 25px
+
+.text__sly1_t1
+    @media screen and (max-width: 420px)
+      font-size: small

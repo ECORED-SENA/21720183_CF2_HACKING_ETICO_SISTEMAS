@@ -7,7 +7,7 @@
         span 3
       h2 Enumeración de activos
 
-    .row.justify-content-center.align-items-center.mb-5.mt-4           
+    .row.justify-content-center.align-items-center.mb-5.mt-4.height__bloque-white_t1        
       .col-lg-10 
         .bloque-texto-g.color-primario.p-3.p-sm-4.p-md-5(data-aos="flip-down")
           .bloque-texto-g__img(
@@ -46,9 +46,9 @@
     .row.justify-content-center
       .col-12.col-md-12
         .tarjeta-color.p-5.mb-5.bg_color6
-          SlyderA(tipo="b").color_bot_slyder2_t1
+          SlyderA(tipo="b").color_bot_slyder2_t1.sld_2_t3
             .row.justify-content-around(data-aos="fade-right")
-              .col-md-4
+              .col-md-4.mb-4.mb-md-0
                 h4.mb-4 Extraer los nombres de usurario que utilizan identificadores de correo electrónico.
                 p.m-0.mb-4 Generalmente, la ID de correo electrónico contiene dos partes: nombre de usuario y nombre de dominio. La estructura de la dirección de correo electrónico es <b>"nombredeusuario@nombrededominio"</b>.
                 p.m-0 Ejemplo: <b>xyz@live.com</b> 
@@ -95,55 +95,56 @@
 
     Separador
 
-    #t_3_3.titulo-segundo.color-acento-contenido(data-aos="zoom-out-right")
-        h2 3.3	Contramedidas
+    .bg_fondo2_t3
+      #t_3_3.titulo-segundo.color-acento-contenido(data-aos="zoom-out-right")
+          h2 3.3	Contramedidas
 
-    p.m-0.mb-4 Durante la enumeración se recoge, sistemáticamente, información y se identifican los sistemas individuales, los pentesters examinan los sistemas en su totalidad; esto permite evaluar las debilidades de seguridad que no necesariamente se derivan de un problema técnico. 
-  
-    .row.justify-content-center.align-items-center.mb-5.mt-4           
-      .col-lg-10 
-        .bloque-texto-g.color-primario.p-3.p-sm-4.p-md-5(data-aos="flip-down")
-          .bloque-texto-g__img(
-            :style="{'background-image': `url(${require('@/assets/curso/tema3/img09.png')})`}"
-          )
-          .bloque-texto-g__texto.p-4
-            p.m-0 Una protección con contraseña, técnicamente segura, puede, por ejemplo, resultar inútil si los atacantes pueden ver la entrada de la contraseña de un usuario a través de una ventana; durante la enumeración, los pentesters recogen información sobre posibles debilidades que se verifican o refutan durante la fase de explotación.
-              br  
+      p.m-0.mb-4 Durante la enumeración se recoge, sistemáticamente, información y se identifican los sistemas individuales, los pentesters examinan los sistemas en su totalidad; esto permite evaluar las debilidades de seguridad que no necesariamente se derivan de un problema técnico. 
+    
+      .row.justify-content-center.align-items-center.mb-5.mt-4.height__bloque-white_t3           
+        .col-lg-10 
+          .bloque-texto-g.color-primario.p-3.p-sm-4.p-md-5(data-aos="flip-down")
+            .bloque-texto-g__img(
+              :style="{'background-image': `url(${require('@/assets/curso/tema3/img09.png')})`}"
+            )
+            .bloque-texto-g__texto.p-4.margin__centerbloqt3
+              p.m-0 Una protección con contraseña, técnicamente segura, puede, por ejemplo, resultar inútil si los atacantes pueden ver la entrada de la contraseña de un usuario a través de una ventana; durante la enumeración, los pentesters recogen información sobre posibles debilidades que se verifican o refutan durante la fase de explotación.
+                br  
 
-    p.margin_left1 <em>Pentesting</em>: de enumeración:
+      p.margin_left1 <em>Pentesting</em>: de enumeración:
 
-    .row.justify-content-center(data-aos="fade-right")
-      .col-12.col-md-6
-        ul
-          li 
-            i.fas.fa-check-circle
-            |  <b>Encontrar el rango de red</b>
-            p.m-0 (utilizar herramientas como Whols Lookup y Graphical DNS Zones).
-          li
-            i.fas.fa-check-circle
-            |  <b>Calcular la máscara de subred</b>
-            p.m-0 (utilizar herramientas como Subnet Mask Calculator).
-          li 
-            i.fas.fa-check-circle
-            |  <b>Realizar descubrimiento</b> 
-            p.m-0 (utilizar herramientas como Nmap (nmap sP)).
-          li 
-            i.fas.fa-check-circle
-            |  <b>Realizar enumeración NetBIOS.</b>
-          li 
-            i.fas.fa-check-circle
-            |  <b>Realizar enumeración DNS</b> 
-            p.m-0 (utilizar herramientas como nslookup y The men y Mice Suite).
-          li 
-            i.fas.fa-check-circle
-            |  <b>Realizar análisis de puertos</b> 
-            p.m-0 (utilizar herramientas como Nmap (mmap sS)).
-          li 
-            i.fas.fa-check-circle
-            |  <b>Utilizar herramientas como SuperScan, NetBIOS Enumerator y PsTools suite.</b>
-      .col-12.col-md-4(data-aos="fade-right")
-        figure
-          img(src='@/assets/curso/tema3/img10.png')
+      .row.justify-content-center(data-aos="fade-right")
+        .col-12.col-md-6
+          ul
+            li 
+              i.fas.fa-check-circle
+              |  <b>Encontrar el rango de red</b>
+              p.m-0 (utilizar herramientas como Whols Lookup y Graphical DNS Zones).
+            li
+              i.fas.fa-check-circle
+              |  <b>Calcular la máscara de subred</b>
+              p.m-0 (utilizar herramientas como Subnet Mask Calculator).
+            li 
+              i.fas.fa-check-circle
+              |  <b>Realizar descubrimiento</b> 
+              p.m-0 (utilizar herramientas como Nmap (nmap sP)).
+            li 
+              i.fas.fa-check-circle
+              |  <b>Realizar enumeración NetBIOS.</b>
+            li 
+              i.fas.fa-check-circle
+              |  <b>Realizar enumeración DNS</b> 
+              p.m-0 (utilizar herramientas como nslookup y The men y Mice Suite).
+            li 
+              i.fas.fa-check-circle
+              |  <b>Realizar análisis de puertos</b> 
+              p.m-0 (utilizar herramientas como Nmap (mmap sS)).
+            li 
+              i.fas.fa-check-circle
+              |  <b>Utilizar herramientas como SuperScan, NetBIOS Enumerator y PsTools suite.</b>
+        .col-12.col-md-4(data-aos="fade-right")
+          figure
+            img(src='@/assets/curso/tema3/img10.png')
 
 
     

@@ -61,12 +61,17 @@ export default {
 .banner-principal
   p, h1, h2, h3, h4, h5, h6
     color: $color-banner-text
+    @media (max-width: $bp-max-xs)
+      margin-left: -50px
+      width: 290px
 
   .tarjeta
     background-color: #FFC664
     background-size: cover
     //background-position: center
     height: 507px
+    @media (max-width: $bp-max-xs)
+      height: 570px
 
   &__info
     display: flex
@@ -86,11 +91,17 @@ export default {
 
       @media (max-width: $bp-max-xs)
         font-size: 2em
-        padding-right: 20px
+        margin-left: -50px
+        width: 258px
 
   &__descripcion
     margin-bottom: 60px
     padding-right: 71px
+
+  &__accion
+    @media (max-width: $bp-max-xs)
+      margin-left: -50px
+      margin-top: -25px
 
   &__row
     @if $banner-principal-img-x == 'derecha'
