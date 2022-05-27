@@ -449,7 +449,7 @@
         .col-lg-8
           .row.justify-content-center
             .col-md-5.col-xl.mb-4.mb-xl-0
-              .tarjeta-numerada.text-center.tarjeta_t5.p-4.shadow(data-aos="fade-right")
+              .tarjeta-numerada.text-center.tarjeta_t5.p-4.shadow.ind--click_tarjetas(data-aos="fade-right")
                 .indicador--hover(v-if="mostrarIndicador")
                 img.img100.mb-4(src='@/assets/curso/tema1/img18.svg')
                 h4 El fingerprinting 

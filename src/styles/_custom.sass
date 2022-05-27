@@ -105,12 +105,6 @@
     background-repeat: no-repeat
     background-size: 100% auto  
 
-.posit
-  position: absolute
-  top: 127px
-  width: 32%
-  right: 28px
-
 .bg_imgfondo1_t1
   position: relative
   .row, .row, p, .row, separador, titulo, .row, cajon, p 
@@ -277,7 +271,11 @@
 .posit
   position: absolute
   top: 76px
-  right: -129px
+  right: -39px
+  @media screen and ( max-width: 420px )
+    top: 378px
+    right: 200px
+
 .img116
   max-width: 116px
 
@@ -611,8 +609,14 @@
 
 .indicador--hover, .indicador--click 
     position: relative
+    left: 45%
+
+.ind--click_tarjetas  
+  .indicador--hover, .indicador--click 
+    position: relative
     top: 175px
-    left: 192px
+    left: 192px  
+
 
 // Tarjeta hower T2    
 .nav-holder2

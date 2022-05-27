@@ -310,7 +310,7 @@
 
     p.m-0.mb-4 Estas son las particularidades de los tipos de anonimizadores:
     
-    .row.justify-content-center(data-aos="fade-down").mb-5
+    .row.justify-content-center(data-aos="fade-down").mb-5.ind--click_tarjetas
       .col-lg-4.col-md-9.mb-3.mb-md-0
         .row.px-2.pt-2(@mouseover="mostrarIndicador = true")
           .col-12.m-0.nav-holder2.px-0
