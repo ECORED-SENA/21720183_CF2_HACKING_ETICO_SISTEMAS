@@ -98,7 +98,7 @@
     position: absolute
     margin: 0 0rem
     top: -3rem
-    left: -46px
+    left: -48px
     width: calc( 100% + 6rem)
     height: 100%
     background-image: url("../assets/curso/tema1/imgfondo3.svg")
@@ -114,7 +114,7 @@
     position: absolute
     margin: 0 0rem
     top: -1rem
-    left: -46px
+    left: -48px
     width: calc( 100% + 6rem)
     height: 140%
     background-image: url("../assets/curso/tema1/imgfondo1.svg")
@@ -308,6 +308,9 @@
   height: 241px
   @media screen and ( max-width: 420px )
     height: 390px
+  @media screen and ( min-width: 1280px )
+    height: 288px
+    
 
 .bg-colorx
   color: #12263F
@@ -332,24 +335,24 @@
     top: -3rem
     left: -49px
     width: calc( 100% + 6rem)
-    height: 100%
+    height: calc( 100% + 3rem)
     background-image: url("../assets/curso/tema2/img25.svg")
     background-repeat: no-repeat
     background-size: cover 
 
 .bg_fondo4_t2
   position: relative
-  .row, separador, titulo, .row, p
+  p, .row, .row, p, .row
     position: relative
   &::before
     content: ''
     position: absolute
     margin: 0 0rem
     top: -3rem
-    left: -46px
+    left: -48px
     width: calc( 100% + 6rem)
-    height: 560%
-    background-image: url("../assets/curso/tema1/img24.svg")
+    height: 100%
+    background-image: url("../assets/curso/tema2/img24.png")
     background-repeat: no-repeat
     background-size: 100% auto  
 
@@ -399,9 +402,9 @@
     position: absolute
     margin: 0 0rem
     top: -1rem
-    left: -46px
-    width: calc( 100% + 6rem)
-    height: 120%
+    left: -48px
+    width: calc( 100% + 7rem)
+    height: 130%
     background-image: url("../assets/curso/tema2/imgfondo2_t2.svg")
     background-repeat: no-repeat
     background-size: cover
@@ -635,6 +638,8 @@
   -webkit-transition: all 0.45s ease
   -moz-transition: all 0.45s ease
   transition: all 0.45s ease
+  @media screen and ( max-width: 1400px )
+    font-size: small 
 
 .nav-holder2:before
   position: absolute
@@ -691,6 +696,10 @@
   h3, p
     opacity: 1
 
+.h1, .titulo-principal__numero span, .h2, .h3, .h4, .h5, .h6 
+  @media screen and ( max-width: 1400px )
+    font-size: 20px
+
 .margin__t1
   h3
     margin: 0 0 0
@@ -711,7 +720,7 @@
     left: -49px
     width: calc( 100% + 6rem)
     height: 87%
-    background-image: url("../assets/curso/tema1/imgfondo4.svg")
+    background-image: url("../assets/curso/tema1/imgfondo4.png")
     background-repeat: no-repeat
     background-size: 100% auto  
 
@@ -727,44 +736,44 @@
 .sld_1_t1
   @media screen and (max-width: 420px) 
     .slyder-a__bullets 
-      width: 80%
+      width: 85%
     .slyder-a__btn--atrs
-      width: 50%
-      height: 40px
+      width: 14%
+      height: 30px
       margin-left: 1px
     .slyder-a__btn--sigt
-      width: 50%
-      height: 40px
-      margin-right: -18px
+      width: 14%
+      height: 30px
+      margin-right: -14px
 
 .sld_2_t2
   @media screen and (max-width: 420px) 
     .slyder-a__bullets 
       width: 90%
     .slyder-a__btn--atrs
-      width: 100px
-      height: 50px
-      margin-right: -3px
-      margin-left: -30px
+      width: 55px
+      height: 33px
+      margin-right: 2px
+      margin-left: -12px
     .slyder-a__btn--sigt
-      width: 100px
-      height: 50px
-      margin-left: -3px
-      margin-right: -26px
+      width: 55px
+      height: 33px
+      margin-left: 2px
+      margin-right: -1px
 
 .sld_2_t3
   @media screen and (max-width: 420px) 
     .slyder-a__bullets 
       width: 90%
     .slyder-a__btn--atrs
-      width: 100px
-      height: 41px
-      margin-right: -3px
-      margin-left: -30px
+      width: 50px
+      height: 32px
+      margin-right: 3px
+      margin-left: -20px
     .slyder-a__btn--sigt
-      width: 100px
-      height: 41px
-      margin-left: -3px
+      width: 50px
+      height: 32px
+      margin-left: 3px
       margin-right: -26px
 
 .mb-sld_1_t1
@@ -775,3 +784,6 @@
 .text__sly1_t1
     @media screen and (max-width: 420px)
       font-size: small
+
+
+  

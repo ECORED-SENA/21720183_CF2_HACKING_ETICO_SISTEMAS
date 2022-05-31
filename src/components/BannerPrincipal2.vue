@@ -17,7 +17,7 @@
 
       .col-lg-5.d-none.d-lg-block.px-0.position-relative.img-p
         img(:src="globalData.imagenBannerPrincipal")
-    .imagen_flotante_1: img.img-fluid(src="@/assets/curso/portada/flot1.svg").d-none.d-lg-block
+    .imagen_flotante_1: img.img-fluid(src="@/assets/curso/portada/flot1.png").d-none.d-lg-block
     //-.imagen_flotante_2: img(src="@/assets/curso/portada/flot2.svg").d-none.d-lg-block
     //-.imagen_flotante_3: img(src="@/assets/curso/portada/flot3.svg").d-none.d-lg-block
     //-.imagen_flotante_4: img(src="@/assets/curso/portada/flot4.svg").d-none.d-lg-block
@@ -47,6 +47,10 @@ export default {
   right: -4%
   max-width: 100%
   height: auto
+  @media (max-width: $bp-max-xl)
+    top: 63px
+    right: 0%
+
 .fondo-contenido
   position: absolute
   padding: 0px
@@ -68,10 +72,12 @@ export default {
   .tarjeta
     background-color: #FFC664
     background-size: cover
-    //background-position: center
+    background-position: center
     height: 507px
     @media (max-width: $bp-max-xs)
       height: 570px
+    @media (max-width: $bp-max-xl)
+      height: 475px;
 
   &__info
     display: flex
@@ -86,6 +92,8 @@ export default {
   &__componente
     margin-bottom: 20px
     padding-right: 190px
+    @media (max-width: $bp-max-xl)
+      padding-right: 192px
     h1
       line-height: 1.1em
 
@@ -97,6 +105,8 @@ export default {
   &__descripcion
     margin-bottom: 60px
     padding-right: 71px
+    @media (max-width: $bp-max-xl)
+      padding-right: 77px
 
   &__accion
     @media (max-width: $bp-max-xs)
@@ -138,9 +148,14 @@ export default {
   &_1
     animation: float1 3.5s ease-in-out infinite alternate
     position: absolute
-    width: 435px
-    top: -1%
-    right: 12%
+    width: 345px
+    top: 7%
+    right: 203px
+    @media (max-width: $bp-max-xl)
+      width: 310px
+      top: 10%
+      right: 168px
+
   &_2
     animation: float1 3.5s ease-in-out infinite alternate
     position: absolute

@@ -15,7 +15,7 @@
             p.m-0 Se puede tomar como ejemplo, la propia página web de la organización que puede proporcionar un directorio de personal o una lista de las biografías de los empleados, lo que resulta útil si el pirata informático necesita utilizar un ataque de ingeniería social para alcanzar el objetivo. 
         .col-12.col-md-5
           figure
-            img(src='@/assets/curso/tema1/img01.svg' data-aos="zoom-in-down") 
+            img(src='@/assets/curso/tema1/img01.png' data-aos="zoom-in-down") 
     
       .row.mb-4.align-items-end
         .col-12.col-md-4
@@ -380,8 +380,7 @@
           .tarjeta.bgr2.mb-5.mb-md-0(data-aos="fade-up")
             .row.justify-content-center.align-items-center
               .col-8.col-sm-6.col-md-5.mb-4.mb-md-0
-                img(src="@/assets/curso/tema1/img14.png")
-
+                  img.medida_especial(src="@/assets/curso/tema1/img14.png")
               .col-md-6.col-lg-6
                 h4.mb-4.ms-4.ms-md-0 Algunas herramientas para el footpringting
                 p.mb-4.text.small.ms-4.ms-md-0 Conozca, sucintamente, algunas herramientas, con sus particularidades, a través de las cuales es posible hacer reconocimiento de huellas o <em>footprinting</em>. Explore el Anexo_1_HerramientasYGoogleHacking.
@@ -447,10 +446,10 @@
 
       .row.mb-5.justify-content-center
         .col-lg-8
-          .row.justify-content-center
+          .row.justify-content-center(@mouseover="mostrarIndicador = false")
             .col-md-5.col-xl.mb-4.mb-xl-0
               .tarjeta-numerada.text-center.tarjeta_t5.p-4.shadow.ind--click_tarjetas(data-aos="fade-right")
-                .indicador--hover(v-if="mostrarIndicador")
+                .indicador--click(v-if="mostrarIndicador")
                 img.img100.mb-4(src='@/assets/curso/tema1/img18.svg')
                 h4 El fingerprinting 
                 .tarjeta-numerada__contenido

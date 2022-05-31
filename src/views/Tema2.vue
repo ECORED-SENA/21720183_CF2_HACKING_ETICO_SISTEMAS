@@ -41,6 +41,7 @@
               p.m-0 Para que un <em>hacker</em> ético pueda realizar exploraciones a los sistemas y redes, debe determinar las metodologías de escaneo, las cuales se pueden resumir en: comprobación de sistemas vivos, comprobación de puertos abiertos, captura de banderas, análisis de búsqueda de vulnerabilidades, dibujo de diagramas de red, preparación de <em>proxies.</em>
                 br  
 
+    .bg_fondo4_t2
       p.m-0.mb-4 Tenga en cuenta las siguientes particularidades de las exploraciones y escaneos que puede realizar el hacker ético:
 
       .row.justify-content-center
@@ -137,7 +138,7 @@
           ImagenInfografica.manito.color-secundario.mb-5(data-aos="fade-up")
             template(v-slot:imagen)
               figure
-                img(src='@/assets/curso/tema2/imginfografica_t2.svg', alt='Texto que describa la imagen')
+                img(src='@/assets/curso/tema2/imginfografica_t2.png', alt='Texto que describa la imagen')
                 figcaption Banderas de comunicación TCP
 
             .tarjeta.color-acento-contenido.p-3(x="12.7%" y="32.2%")
@@ -312,7 +313,7 @@
     
     .row.justify-content-center(data-aos="fade-down").mb-5.ind--click_tarjetas
       .col-lg-4.col-md-9.mb-3.mb-md-0
-        .row.px-2.pt-2(@mouseover="mostrarIndicador = true")
+        .row.px-2.pt-2(@mouseover="mostrarIndicador = false")
           .col-12.m-0.nav-holder2.px-0
             figure
               .indicador--click(v-if="mostrarIndicador")
