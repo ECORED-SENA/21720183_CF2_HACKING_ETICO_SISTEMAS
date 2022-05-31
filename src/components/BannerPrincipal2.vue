@@ -58,7 +58,7 @@ export default {
   height: 100%
   width: 100%
 .banner-principal__info
-  padding-left: 80px  !important
+  padding-left: 50px  !important
   z-index: 3
 
 
@@ -76,8 +76,8 @@ export default {
     height: 507px
     @media (max-width: $bp-max-xs)
       height: 570px
-    @media (max-width: $bp-max-xl)
-      height: 475px;
+    @media (min-width: $bp-min-lg) and (max-width: $bp-max-xl)
+      height: 475px
 
   &__info
     display: flex
@@ -151,7 +151,7 @@ export default {
     width: 345px
     top: 7%
     right: 203px
-    @media (max-width: $bp-max-xl)
+    @media (min-width: $bp-min-lg) and (max-width: $bp-max-xl)
       width: 310px
       top: 10%
       right: 168px
