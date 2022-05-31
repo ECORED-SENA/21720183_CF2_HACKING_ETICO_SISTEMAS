@@ -58,16 +58,20 @@ export default {
   height: 100%
   width: 100%
 .banner-principal__info
-  padding-left: 50px  !important
+  padding-left: 80px  !important
   z-index: 3
 
 
 .banner-principal
   p, h1, h2, h3, h4, h5, h6
     color: $color-banner-text
-    @media (max-width: $bp-max-xs)
+    margin-left: -32px
+    margin-right: 32px
+    @media (max-width: $bp-min-sm)
       margin-left: -50px
-      width: 290px
+      width: 345px
+    @media screen and (max-width: 380px)
+      width: 320px
 
   .tarjeta
     background-color: #FFC664
@@ -96,6 +100,8 @@ export default {
       padding-right: 192px
     h1
       line-height: 1.1em
+      margin-left: -32px
+      margin-right: 32px
 
       @media (max-width: $bp-max-xs)
         font-size: 2em
@@ -109,6 +115,8 @@ export default {
       padding-right: 77px
 
   &__accion
+    margin-left: -32px
+    margin-right: 32px
     @media (max-width: $bp-max-xs)
       margin-left: -50px
       margin-top: -25px
