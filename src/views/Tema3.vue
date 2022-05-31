@@ -50,7 +50,8 @@
             .row.justify-content-around(data-aos="fade-right")
               .col-md-4.mb-4.mb-md-0
                 h4.mb-4 Extraer los nombres de usurario que utilizan identificadores de correo electrónico.
-                p.m-0.mb-4 Generalmente, la ID de correo electrónico contiene dos partes: nombre de usuario y nombre de dominio. La estructura de la dirección de correo electrónico es <b>"nombredeusuario@nombrededominio"</b>.
+                p.m-0 Generalmente, la ID de correo electrónico contiene dos partes: nombre de usuario y nombre de dominio. La estructura de la dirección de correo electrónico es
+                p.m-0.mb-4.text__sly1_t1 <b>"nombredeusuario@nombrededominio"</b>.
                 p.m-0 Ejemplo: <b>xyz@live.com</b> 
                 | <b>xyz</b>, carácter que precede al símbolo “@”, es el nombre de usuario.
                 p.m-0 <b>live.com</b>, carácter que sucede al símbolo “@” es el nombre de dominio.
