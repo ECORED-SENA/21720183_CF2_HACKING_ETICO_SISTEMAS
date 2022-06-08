@@ -631,17 +631,11 @@
   margin: 10px 5px
   overflow: hidden
   position: relative
-  -webkit-transform: translateZ(0)
-  -moz-transform: translateZ(0)
-  transform: translateZ(0)
 
 .nav-holder2 *, .nav-holder2 *:before, .nav-holder2 *:after
-  -webkit-box-sizing: border-box
   -moz-box-sizing: border-box
-  box-sizing: border-box
   -webkit-transition: all 0.45s ease
   -moz-transition: all 0.45s ease
-  transition: all 0.45s ease
   @media screen and ( max-width: 1400px )
     font-size: small 
 
@@ -656,18 +650,10 @@
   border-radius: 30px
   opacity: -30
   z-index: 888
-  -webkit-transition: all 0.45s ease
-  -moz-transition: all 0.45s ease
-  -ms-transition: all 0.45s ease
   transition: all 0.45s ease
-  -webkit-transform: translateY(80%)
-  -moz-transform: translateY(80%)
-  transform: translateY(80%)
+
 
 .nav-holder2:hover:before
-  -webkit-transform: translateY(0)
-  -moz-transform: translateY(0)
-  transform: translateY(0)
   opacity: 1
   -webkit-transition-delay: 0.1s
   -moz-transition-delay: 0.1s
@@ -688,7 +674,10 @@
   p
     margin: 0
     opacity: 0
+    padding: 0
     line-height: 1.4em
+    @media screen and (max-width: 420px) 
+      padding: 2rem
 
 .nav-holder2 .h4
   margin: 0

@@ -203,7 +203,7 @@
                               |  Ingeniería social.
                             li
                               i.fas.fa-skull
-                              |  Ataques redes y sistemas.
+                              |  Ataques a redes y sistemas.
                             li 
                               i.fas.fa-skull
                               |  Información filtrada.
@@ -246,7 +246,7 @@
                                   |  Puntos VPN.
                                 li 
                                   <i class="fas fa-circle fa-xs" style= "color:#E01650"></i>
-                                  |  ACs.
+                                  |  ACS.
                                 li 
                                   <i class="fas fa-circle fa-xs" style= "color:#E01650"></i>
                                   |  IDS que ejecutan.
@@ -279,7 +279,7 @@
                                 p.m-0  Banderas del sistema.
                               li 
                                 <i class="fas fa-circle fa-xs" style= "color:#E01650"></i>
-                                p.m-0 tablas de enrutamiento.
+                                p.m-0 Tablas de enrutamiento.
                               li 
                                 <i class="fas fa-circle fa-xs" style= "color:#E01650"></i>
                                 p.m-0 Información de SNMP.
@@ -383,9 +383,9 @@
                   img.medida_especial(src="@/assets/curso/tema1/img14.png")
               .col-md-6.col-lg-6
                 h4.mb-4.ms-4.ms-md-0 Algunas herramientas para el footpringting
-                p.mb-4.text.small.ms-4.ms-md-0 Conozca, sucintamente, algunas herramientas, con sus particularidades, a través de las cuales es posible hacer reconocimiento de huellas o <em>footprinting</em>. Explore el Anexo_1_HerramientasYGoogleHacking.
+                p.mb-4.text.small.ms-4.ms-md-0 Conozca, sucintamente, algunas herramientas, con sus particularidades, a través de las cuales es posible hacer reconocimiento de huellas o <em>footprinting</em>. Explore el documento anexo.
                 
-                a.boton.bgr1.margin2(:href="obtenerLink('/downloads/OKEst_Anexo_1_HerramientasYGoogleHacking.docx')" target="_blank" type="application/pdf")
+                a.boton.bgr1.margin2(:href="obtenerLink('/downloads/Anexo_1_HerramientasYGoogleHacking.pdf')" target="_blank" type="application/pdf")
                   span Descargar
                   i.fas.fa-file-download
                 img.posit.img116(src="@/assets/curso/tema1/img15.png")   
@@ -474,11 +474,11 @@
             
             p(numero="3" titulo="Realizar el <em>footprinting</em> a través de los motores de búsqueda") Usar los motores de búsqueda de huellas como Google, Yahoo! Search, Ask, Bing, y Dog pile para reunir los datos de la organización objetivo como los detalles de los empleados, las páginas de acceso y los portales de intranet, entre otros, eso puede ayudar en la actividad de ingeniería social y variedades alternativas de ataques a sistemas avanzados.
             
-            p(numero="4" titulo="Realizar el <em>footprinting</em> a través de servicios web") Realizar el <em>footprinting</em> a través de servicios web como Net craft, Pip, Google Finance y Google Alerts para reunir datos relativos al sitio web de la organización objetivo, los empleados, el competidor, la infraestructura y los sistemas operativos.
+            p(numero="4" titulo="Realizar el <em>footprinting</em> a través de servicios web") Realizar el <em>footprinting</em> a través de servicios web como Netcraft, Pip, Google Finance y Google Alerts para reunir datos relativos al sitio web de la organización objetivo, los empleados, el competidor, la infraestructura y los sistemas operativos.
 
-            p(numero="5" titulo="Realizar el <em>footprinting</em> a través de sitios de redes sociales") Realizar la impresión del pie para recoger los objetivos del órgano objetivo del empleado de la nación de la impresión del pie, datos de perfiles personales en sitios de redes sociales como Facebook, rvlySpace, LinkedIn, Twitter, Interest, Google+, etc. Esto puede ayudar en la actividad de ingeniería social, además, usarás los motores de búsqueda de personas para obtener datos de algunas personas objetivo.
+            p(numero="5" titulo="Realizar el <em>footprinting</em> a través de sitios de redes sociales") Realizar la impresión del pie para recoger los objetivos del órgano objetivo del empleado de la nación de la impresión del pie, datos de perfiles personales en sitios de redes sociales como Facebook, MySpace, LinkedIn, Twitter, Pinterest, Google+, etc. Esto puede ayudar en la actividad de ingeniería social, además, usarás los motores de búsqueda de personas para obtener datos de algunas personas objetivo.
 
-            p(numero="6" titulo="Realizar el <em>footprinting</em> del sitio web") Realizar el <em>footprinting</em> de un sitio web usando herramientas como Burp Suite, web information Extractor, Track web site duplicator, Metabolite. Website-Watcher para crear un mapa detallado de la estructura y diseño del sitio web.
+            p(numero="6" titulo="Realizar el <em>footprinting</em> del sitio web") Realizar el <em>footprinting</em> de un sitio web usando herramientas como Burp Suite, Web Information Extractor, Track web site duplicator, Metabolite. Website-Watcher para crear un mapa detallado de la estructura y diseño del sitio web.
         .col-md-5.mb-5.mb-md-0
           figure
             img(data-aos="fade-left")(src='@/assets/curso/tema1/img19.png')
@@ -494,7 +494,7 @@
             
             p(numero="9" titulo="Realizar el <em>footprinting</em> de WHOIS") Realizar el <em>footprinting</em> utilizando herramientas como WHOIS es la búsqueda del convertidor de IP por lotes para extraer los datos relativos a los dominios explícitos, se capturan datos como la dirección IP, el nombre del propietario del dominio, el nombre del registrante y los detalles de contacto, incluyendo números de teléfono e identificaciones de correo electrónico; el conocimiento se utilizará para crear un mapa detallado de la red de la organización y reunir datos personales.
 
-            p(numero="10" titulo="Realizar el <em>footprinting</em> del DNS") Usando herramientas como DNs, DIG y DNS para trabajar, anfitriones clave dentro de la red y para realizar ataques de ingeniería social, resolver el nombre de dominio para averiguar sobre su dirección IP, registros DNS, etc.
+            p(numero="10" titulo="Realizar el <em>footprinting</em> del DNS") Usando herramientas como DNS, DIG y DNS para trabajar, anfitriones clave dentro de la red y para realizar ataques de ingeniería social, resolver el nombre de dominio para averiguar sobre su dirección IP, registros DNS, etc.
 
             p(numero="11" titulo="Realizar el <em>footprinting</em>") Aquí se usan herramientas como Path analyzer pro, Visual Route, y GEO Spider. La red varía y los datos alternativos con respecto a la red del objetivo ayudan a dibujar el diagrama de la red del objetivo.
 

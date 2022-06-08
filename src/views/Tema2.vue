@@ -29,7 +29,7 @@
       Separador
 
       #t_2_1.titulo-segundo.color-acento-contenido(data-aos="zoom-out-right")
-        h2 2.1	Concepto y generalidades
+        h2 2.1	Metodología de exploración CEH
 
       .row.justify-content-center.align-items-center.mb-5.mt-4.height__bloque-white_t3             
         .col-lg-10 
@@ -62,21 +62,21 @@
                 .col-md-7
                   figure
                     img(src='@/assets/curso/tema2/img04.svg', alt='Texto que describa la imagen')
-              .row.justifiy-content-around
+              .row.justify-content-around
                 .col-md-5
                   h4.mb-4 Paquete de solicitud de eco
                   p.m-0.mb-4.mb-md-0 Es inusual en el sentido de que es el único paquete ICMP que se envía sin ser provocado por un error. Por lo tanto, Ping no tiene que emular una condición de error para obtener un mensaje ICMP de vuelta. Ping tiene dos opciones que permiten especificar una lista de direcciones para el camino que debe tomar la transmisión: "-j", que sugiere una ruta, y "-k", que dicta la ruta.
                 .col-md-7
                   figure
                     img(src='@/assets/curso/tema2/img05.svg', alt='Texto que describa la imagen')
-              .row.justifiy-content-evenly
+              .row.justify-content-around
                 .col-md-5
                   h4.mb-4 Barrido de Ping Sweep
                   p.m-0.mb-4.mb-md-0 Determina los <em>hosts</em> vivos de un rango de direcciones IP, mediante envío de peticiones de eco ICMP a múltiples <em>hosts</em>. Si un <em>host</em> está vivo, devolverá una respuesta de eco ICMP. Es una técnica usada para identificar si los anfitriones están activos en las redes usando sus direcciones IP. El método de barrido de Ping se utiliza para hacer Ping a muchos <em>hosts</em> a la vez. Por ejemplo, si hay una red con una identificación de red 192.10.0.0/24, entonces es muy simple identificar el número total de <em>hosts</em> allí mediante un Ping de barrido de esta red. 
                 .col-md-7
                   figure
                     img(src='@/assets/curso/tema2/img06.svg', alt='Texto que describa la imagen')
-              .row.justifiy-content-evenly
+              .row.justify-content-around
                 .col-md-5
                   h4.mb-4 Three Way Handshake
                   p.m-0.mb-4.mb-md-0 También denominado TCP 3-<em>way handshake</em>, es un proceso utilizado en una red TCP/IP para hacer una conexión entre el servidor y el cliente, es un proceso de tres pasos que requiere que, tanto el cliente como el servidor, intercambien paquetes de sincronización y reconocimiento antes de que comience el verdadero proceso de comunicación de datos.
@@ -84,7 +84,7 @@
                   figure
                     img(src='@/assets/curso/tema2/img07.svg', alt='Texto que describa la imagen')
 
-      .row.justifiy-content-center.mb-4
+      .row.justify-content-center.mb-4
         .col-12.col-md-4
           figure.mb-4.mb-md-0
             img(data-aos="fade-right")(src='@/assets/curso/tema2/img08.svg')
@@ -123,7 +123,7 @@
               figure
               img(src='@/assets/curso/tema2/img11.svg')
       
-      .row.justifiy-content-center.align-items-center
+      .row.justify-content-center.align-items-center
         .col-12.col-md-8
           .cajon.color-primario.p-3.mb-4(data-aos="fade-right")
             h5.ms-1.pt-2 Banderas de comunicación TCP
@@ -311,36 +311,35 @@
 
     p.m-0.mb-4 Estas son las particularidades de los tipos de anonimizadores:
     
-    .row.justify-content-center(data-aos="fade-down").mb-5.ind--click_tarjetas
+    .row.justify-content-center(data-aos="fade-right").mb-5.ind--click_tarjetas
       .col-lg-4.col-md-9.mb-3.mb-md-0
-        .row.px-2.pt-2(@mouseover="mostrarIndicador = false")
+        .row.pt-2(@mouseover="mostrarIndicador = false")
           .col-12.m-0.nav-holder2.px-0
-            figure
+            figure.mb-4
               .indicador--click(v-if="mostrarIndicador")
               img(src="@/assets/curso/tema2/img21.svg")
-            .text.p-lg-4
-              .row.px-1.pt-1.mt-md-4.pt-md-0.mt-lg-3.mt-xl-4
-                .h3.mt-4.mt-lg-0.mb-3.text-center Anonimizador
+            .text.p-lg-2.p-3
+              h3.text-center.mt-4 Anonimizador
+              .row.px-1.pt-1.mt-md-4.pt-md-0.mt-lg-3.mt-xl-5
                 p.px-4 Un anonimizador podría ser un servicio para esconder la identidad de alguna persona, una vez que la victimización asegura los servicios web. El anonimizador encripta la información del PC al proveedor de servicios de la red.
       .col-lg-4.col-md-9.mb-3.mb-md-0
-        .row.px-2.pt-2
+        .row.pt-2
           .col-12.m-0.nav-holder2.px-0
-            figure.shadow
+            figure.mb-4
               img(src="@/assets/curso/tema2/img22.svg")
             .text.p-lg-2.p-3
+              h3.text-center.mt-4 Anonimizadores en red
               .row.px-1.pt-1.mt-md-4.pt-md-0.mt-lg-3.mt-xl-5
-                .h3.mt-4.mt-lg-0.mb-3.text-center Anonimizadores en red
-                p.px-2.px-md-5.text__sly1_t1 Transfieren primero sus datos a través de una red de computadoras conectadas a internet, antes de pasarlos al sitio web. Como resultado de que los datos pasan a través de muchas computadoras de la web, se convierte en algo muy engorroso para cualquiera que intente rastrear sus datos para determinar la asociación entre el usuario y también el anonimizador.
+                p.px-4.px-md-3 Transfieren primero sus datos a través de una red de computadoras conectadas a internet, antes de pasarlos al sitio web. Como resultado de que los datos pasan a través de muchas computadoras de la web, se convierte en algo muy engorroso para cualquiera que intente rastrear sus datos para determinar la asociación entre el usuario y también el anonimizador.
       .col-lg-4.col-md-9.mb-3.mb-md-0
-        .row.px-2.pt-2
+        .row.pt-2
           .col-12.m-0.nav-holder2.px-0
-            figure
+            figure.mb-4
               img(src="@/assets/curso/tema2/img23.svg")
             .text.p-lg-2.p-3
+              h3.text-center.mt-4 Anonimizadores de un solo punto
               .row.px-1.pt-1.mt-md-4.pt-md-0.mt-lg-3.mt-xl-5
-                .h3.mt-4.mt-lg-0.mb-3.text-center Anonimizadores de un solo punto
-                p.px-2.px-md-5 Primero transfieren sus datos a través de un sitio web, antes de enviarlos al sitio web objetivo; así que le pasan los datos recogidos del sitio web objetivo al usuario a través del sitio web para proteger su identidad.
-
+                p.px-4 Primero transfieren sus datos a través de un sitio web, antes de enviarlos al sitio web objetivo; así que le pasan los datos recogidos del sitio web objetivo al usuario a través del sitio web para proteger su identidad.
 
 
 
