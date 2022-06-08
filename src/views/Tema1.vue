@@ -476,7 +476,7 @@
             
             p(numero="4" titulo="Realizar el <em>footprinting</em> a través de servicios web") Realizar el <em>footprinting</em> a través de servicios web como Netcraft, Pip, Google Finance y Google Alerts para reunir datos relativos al sitio web de la organización objetivo, los empleados, el competidor, la infraestructura y los sistemas operativos.
 
-            p(numero="5" titulo="Realizar el <em>footprinting</em> a través de sitios de redes sociales") Realizar la impresión del pie para recoger los objetivos del órgano objetivo del empleado de la nación de la impresión del pie, datos de perfiles personales en sitios de redes sociales como Facebook, MySpace, LinkedIn, Twitter, Pinterest, Google+, etc. Esto puede ayudar en la actividad de ingeniería social, además, usarás los motores de búsqueda de personas para obtener datos de algunas personas objetivo.
+            p(numero="5" titulo="Realizar el <em>footprinting</em> a través de sitios de redes sociales") Realizar el <em>footprinting</em> para recoger datos del objetivo, revisando perfiles personales en sitios de redes sociales como Facebook, MySpace, LinkedIn, Twitter, Pinterest, Google+, etc. Esto puede ayudar en la actividad de ingeniería social, utilizando los motores de búsqueda de personas para obtener datos de interés para el objetivo del <em>footprinting.</em>
 
             p(numero="6" titulo="Realizar el <em>footprinting</em> del sitio web") Realizar el <em>footprinting</em> de un sitio web usando herramientas como Burp Suite, Web Information Extractor, Track web site duplicator, Metabolite. Website-Watcher para crear un mapa detallado de la estructura y diseño del sitio web.
         .col-md-5.mb-5.mb-md-0
